@@ -1,0 +1,10 @@
+@use "variables.scss";
+
+.container {
+  margin: 0 auto;
+
+
+  // @media (min-width: variables.$desktop-width) {
+  //   min-width: variables.$desktop-width;
+  // }
+}

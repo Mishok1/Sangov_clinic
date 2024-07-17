@@ -1,0 +1,11 @@
+@use '../common/variables.scss';
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__link {
+  color: #1A1919;
+}

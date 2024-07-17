@@ -1,5 +1,61 @@
+@use '../common/variables.scss';
+
 .header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  padding: 8px 20px 0 20px;
+  line-height: 21.86px;
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 16px 123px 0 123px;
+  }
+}
+
+
+.header__container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #B7B7B7;
+
+  @media (min-width: variables.$desktop-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+
+.header__address {
+  display: none;
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #B7B7B7;
+    margin-bottom: 8px;
+  }
+}
+
+.header__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // @media (min-width: variables.$desktop-width) {}
+}
+
+.header__menu-wrapper {
+  display: none;
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
+  }
+}
+
+.header__mobile-button {
+  width: 45px;
+  height: 25px;
+  background-color: blue;
+
+  @media (min-width: variables.$desktop-width) {
+    display: none;
+  }
 }

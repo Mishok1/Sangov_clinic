@@ -1,17 +1,104 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Clinic</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__container container">
+      <address class="header__address address">
+        <ul class="address__list">
+          <li class="address__item address__item--map">
+            <p>г. Новосибирск, ул. Советская, д. 46/2</p>
+          </li>
+          <li class="address__item address__item--clock">
+            <p>Ежедневно с 9:00 до 21:00</p>
+          </li>
+          <li class="address__item address__item--tel">
+            <a href="tel:+73832093255">+7(383)2093255</a>
+          </li>
+          <li class="address__item address__item--tel">
+            <a href="tel:+79639456363">+7(963)9456363</a>
+          </li>
+          <li class="address__item address__item--eye">
+            <a class="visually-hidden" href="#">Версия для слабовидящих</a>
+          </li>
+        </ul>
+
+        <ul class="address__socials">
+          <li class="address__social ">
+            <a class="address__link address__link--whatsapp" href="#wt">
+              <span class="visually-hidden">What's App</span>
+            </a>
+          </li>
+          <li class="address__social">
+            <a class="address__link address__link--instagram" href="#inst">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="address__social">
+            <button class="address__link address__link--mail button" type="button">
+              <span class="visually-hidden">Email</span>
+            </button>
+          </li>
+        </ul>
+      </address>
+
+      <div class="header__bottom">
+        <a class="header__logo logo" href="index.html">
+          <img class="logo__image" src="images/clinic-logo.png" width="59" height="64" alt="Clinic Logo.">
+          <p class="logo__description">Стоматологическая<br>клиника Сангова</p>
+        </a>
+
+        <div class="header__menu-wrapper menu-wrapper">
+          <ul class="menu-wrapper__list menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Цены</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Наши работы</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Врачи</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-wrapper__search">
+          <form class="menu-wrapper__form" action="#" method="post">
+            <label>
+              <input class="menu-wrapper__input" type="text" placeholder="Поиск">
+            </label>
+          </form>
+          <button class="menu-wrapper__button button button--primary" type="button">Записаться</button>
+        </div>
+
+        <button class="header__mobile-button button" type="button">
+          <span class="visually-hidden">Кнопка открытыя меню</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <h1>Главная</h1>
+  </main>
+</body>
+
 </html>

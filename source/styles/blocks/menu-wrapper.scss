@@ -1,8 +1,13 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .menu-wrapper__list {
   display: flex;
   column-gap: 24px;
+
+  &--column {
+    flex-direction: column;
+    row-gap: 16px;
+  }
 }
 
 .menu-wrapper__search {
@@ -18,18 +23,18 @@
   width: 184px;
   height: 38px;
   border-radius: 16px;
-  border: 1px solid #0347AE;
+  border: 1px solid #0347ae;
   padding: 8px 24px;
-  font-family: "Manrope-500";
+  font-family: "Manrope-500", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 21.86px;
-  color: #0347AE;
+  color: #0347ae;
 
 
   &::placeholder {
-    color: #0347AE;
-    font-family: "Manrope-500";
+    color: #0347ae;
+    font-family: "Manrope-500", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 21.86px;

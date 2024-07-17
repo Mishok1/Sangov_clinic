@@ -1,0 +1,66 @@
+@use "../common/variables.scss";
+
+.hero__container {
+  padding: 16px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 24px 123px 48px;
+    background-color: #333333;
+  }
+}
+
+.hero__title {
+  margin-bottom: 8px;
+
+  @media (min-width: variables.$desktop-width) {
+    line-height: 32px;
+    color: #ffffff;
+  }
+}
+
+.hero__description {
+  margin: 0;
+  line-height: 16px;
+  margin-bottom: 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    color: #ffffff;
+    line-height: 22px;
+  }
+}
+
+.hero__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  @media (min-width: variables.$desktop-width) {
+    flex-direction: row;
+    column-gap: 24px;
+  }
+}
+
+.hero__button {
+  height: 42px;
+
+  @media (min-width: variables.$desktop-width) {
+    height: 46px;
+    width: 171px;
+  }
+}
+
+.hero__link {
+  background-color: #429209;
+  padding: 11px 22px;
+  border-radius: 16px;
+  color: #ffffff;
+  text-align: center;
+
+  @media (min-width: variables.$desktop-width) {
+    height: 46px;
+    width: 243px;
+  }
+}

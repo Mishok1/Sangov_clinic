@@ -12,7 +12,7 @@
 
 <body class="page__body">
   <header class="header">
-    <div class="header__container container">
+    <div class="header__container">
       <address class="header__address address">
         <ul class="address__list">
           <li class="address__item address__item--map">
@@ -27,10 +27,11 @@
           <li class="address__item address__item--tel">
             <a href="tel:+79639456363">+7(963)9456363</a>
           </li>
-          <li class="address__item address__item--eye">
-            <a class="visually-hidden" href="#">Версия для слабовидящих</a>
-          </li>
         </ul>
+
+        <a class="address__eye" href="#">
+          <span class="address__eye-text address__eye-text--hidden">Версия для слабовидящих</span>
+        </a>
 
         <ul class="address__socials">
           <li class="address__social ">
@@ -60,7 +61,7 @@
         <div class="header__menu-wrapper menu-wrapper">
           <ul class="menu-wrapper__list menu">
             <li class="menu__item">
-              <a class="menu__link" href="#"> Услуги</a>
+              <a class="menu__link" href="#">Услуги</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Цены</a>
@@ -83,7 +84,7 @@
         <div class="menu-wrapper__search">
           <form class="menu-wrapper__form" action="#" method="post">
             <label>
-              <input class="menu-wrapper__input" type="text" placeholder="Поиск">
+              <input class="menu-wrapper__input" type="text" name="search" placeholder="Поиск">
             </label>
           </form>
           <button class="menu-wrapper__button button button--primary" type="button">Записаться</button>
@@ -97,8 +98,96 @@
     </div>
   </header>
   <main>
-    <h1>Главная</h1>
+    <h1 class="visually-hidden">Главная</h1>
+    <section class="hero">
+      <div class="hero__container">
+        <h2 class="hero__title title">Стоматология 5 звезд</h2>
+        <p class="hero__description">Обслуживание пациентов всех возрастов</p>
+        <!-- slider -->
+        <div class="hero__buttons-wrapper">
+          <button class="hero__button button button--primary" type="button">Записаться</button>
+          <a class="hero__link" href="#wa">Написать в WhatsApp</a>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo-wrapper">
+        <a class="footer__logo logo" href="index.html">
+          <img class="logo__image" src="images/clinic-logo.png" width="59" height="64" alt="Clinic Logo.">
+          <p class="logo__description">Стоматологическая<br>клиника Сангова</p>
+        </a>
+        <a class="footer__link" href="#wa">Написать в WhatsApp</a>
+        <button class="footer__button button button--primary" type="button">Записаться</button>
+      </div>
+      <address class="footer__address address">
+        <ul class="address__list address__list--direction address__list--color">
+          <li class="address__item address__item--color address__item--map">
+            <p>г. Новосибирск, ул. Советская, д. 46/2</p>
+          </li>
+          <li class="address__item address__item--color address__item--clock">
+            <p>Ежедневно с 9:00 до 21:00</p>
+          </li>
+          <li class="address__item address__item--color address__item--tel">
+            <a href="tel:+73832093255">+7(383)2093255</a>
+          </li>
+          <li class="address__item address__item--color address__item--tel">
+            <a href="tel:+79639456363">+7(963)9456363</a>
+          </li>
+        </ul>
+
+        <a class="address__eye address__eye--color" href="#">
+          <span class="address__eye-text">Версия для слабовидящих</span>
+        </a>
+
+        <ul class="address__socials">
+          <li class="address__social">
+            <a class="address__link address__link--color address__link--whatsapp" href="#wt">
+              <span class="visually-hidden">What's App</span>
+            </a>
+          </li>
+          <li class="address__social">
+            <a class="address__link address__link--color address__link--instagram" href="#inst">
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="address__social">
+            <button class="address__link address__link--color address__link--mail button" type="button">
+              <span class="visually-hidden">Email</span>
+            </button>
+          </li>
+        </ul>
+      </address>
+      <div class="footer__bottom">
+        <div class="footer__menu-wrapper menu-wrapper">
+          <ul class="menu-wrapper__list menu-wrapper__list--column menu">
+            <li class="menu__item">
+              <a href="#">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Цены</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Наши работы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Врачи</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__cards">
+      <img class="footer__image" src="images/cards.png" width="275" height="169" alt="Способы оплаты.">
+    </div>
+  </footer>
 </body>
 
 </html>

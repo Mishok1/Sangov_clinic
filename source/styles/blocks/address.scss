@@ -9,6 +9,15 @@
   padding: 0;
   display: flex;
   column-gap: 32px;
+
+  &--direction {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &--color {
+    color: #ffffff;
+  }
 }
 
 .address__item {
@@ -27,55 +36,50 @@
 
   &--map {
     &::before {
-      background-image: url('../../icons/map.svg');
+      background-image: url("../../icons/map.svg");
     }
   }
 
   &--clock {
     &::before {
-      background-image: url('../../icons/clock.svg');
+      background-image: url("../../icons/clock.svg");
     }
   }
 
   &--tel {
     &::before {
-      background-image: url('../../icons/tel.svg');
-    }
-  }
-  &--eye {
-    &::before {
-      background-image: url('../../icons/eye.svg');
-      width: 32px;
-      height: 32px;
+      background-image: url("../../icons/tel.svg");
     }
   }
 
   & p {
     margin: 0;
   }
+
+  &--color.address__item--map {
+    color: #ffffff;
+
+    &::before {
+      background-image: url("../../icons/map-white.svg");
+    }
+  }
+
+  &--color.address__item--clock {
+    color: #ffffff;
+
+    &::before {
+      background-image: url("../../icons/clock-white.svg");
+    }
+  }
+
+  &--color.address__item--tel {
+    color: #ffffff;
+
+    &::before {
+      background-image: url("../../icons/tel-white.svg");
+    }
+  }
 }
-
-// .address__eye {
-//   margin: 0;
-//   display: flex;
-//   column-gap: 16px;
-//   align-items: center;
-
-//   & span {
-//     background: no-repeat center;
-//     display: none;
-
-//   }
-//   &::before {
-//     content: "";
-//     display: block;
-//     width: 32px;
-//     height: 32px;
-//     background-image: url('../../icons/eye.svg');
-//   }
-
-
-// }
 
 .address__socials {
   list-style-type: none;
@@ -93,14 +97,55 @@
   display: block;
 
   &--whatsapp {
-    background-image: url('../../icons/whatsapp.svg');
+    background-image: url("../../icons/whatsapp.svg");
   }
 
   &--instagram {
-    background-image: url('../../icons/instagram.svg');
+    background-image: url("../../icons/instagram.svg");
   }
 
   &--mail {
-    background-image: url('../../icons/mail.svg');
+    background-image: url("../../icons/mail.svg");
+  }
+
+  &--color.address__link--whatsapp {
+    background-image: url("../../icons/whatsapp-white.svg");
+  }
+
+  &--color.address__link--instagram {
+    background-image: url("../../icons/instagram-white.svg");
+  }
+
+  &--color.address__link--mail {
+    background-image: url("../../icons/mail-white.svg");
+  }
+}
+
+
+.address__eye {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url("../../icons/eye.svg") no-repeat center;
+  }
+
+  &.address__eye--color {
+    &::before {
+      background-image: url("../../icons/eye-white.svg");
+    }
+  }
+}
+
+.address__eye-text {
+  color: #ffffff;
+
+  &--hidden {
+    display: none;
   }
 }

@@ -1,0 +1,53 @@
+@use "../common/variables.scss";
+
+.promo__container {
+  padding: 40px 8px;
+  position: relative;
+  height: 720px;
+
+  @media (min-width: variables.$desktop-width) {
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 48px 123px;
+  }
+}
+
+.promo__wrapper {
+  padding: 24px 16px;
+  box-shadow: 0 2px 9px 1px #0000001A;
+  border-radius: 16px;
+  margin: 0 12px;
+  background-color: #FFFFFF;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 716px;
+    margin: 0;
+    flex-shrink: 0;
+  }
+}
+
+.promo__title {
+  margin-bottom: 16px;
+}
+
+.promo__text {
+  margin: 0 0 24px;
+}
+
+.promo__button {
+  width: 276px;
+  height: 46px;
+}
+
+.promo__image {
+  display: block;
+  position: relative;
+  top: -76px;
+  z-index: -1;
+
+  @media (min-width: variables.$desktop-width) {
+    top: 0;
+    left: -82px;
+  }
+}

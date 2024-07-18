@@ -1,0 +1,33 @@
+.rating__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.rating__item {
+  padding: 24px;
+  width: 289px;
+  height: 252px;
+  border: 1px solid #33333366;
+}
+
+.rating__image {
+  margin-bottom: 16px;
+}
+
+.rating__text {
+  margin: 0;
+}
+
+.rating__score {
+  margin: 8px 0 16px;
+  font-family: "Manrope-600", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.rating__stars {
+  margin-bottom: 8px;
+}

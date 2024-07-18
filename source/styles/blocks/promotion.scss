@@ -1,0 +1,187 @@
+@use "../common/variables.scss";
+
+.promotion__container {
+  padding: 40px 20px;
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 48px 123px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+
+  & picture {
+    @media (min-width: variables.$desktop-width) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 9;
+    }
+  }
+}
+
+.promotion__description {
+  font-family: "Manrope-600", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0 0 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.promotion__prices {
+  display: flex;
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.promotion__price {
+  font-family: "Manrope-700", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #0347AE;
+  margin-right: 16px;
+}
+
+.promotion__old-price {
+  font-family: "Manrope-600", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  text-decoration: line-through;
+}
+
+.promotion__image {
+  object-fit: cover;
+  border-radius: 32px;
+  margin-bottom: 24px;
+
+
+}
+
+.promotion__description {
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.promotion__offer {
+  padding: 16px 30px;
+  border: 1px solid #0347AE;
+  border-radius: 32px;
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.promotion__offer-title {
+  font-family: "Manrope-700", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #0347AE;
+  margin: 0 0 16px;
+}
+
+.promotion__offer-description {
+  font-family: "Manrope-500", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}
+
+.promotion__ads {
+  border-radius: 32px;
+  background-color: #0347AE;
+  color: #FFFFFF;
+  padding: 24px 32px;
+  margin: 0 0 24px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.promotion__ads-title {
+  font-family: "Manrope-700", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0 0 16px;
+}
+
+.promotion__ads-text {
+  font-family: "Manrope-600", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0 0 24px;
+}
+
+.promotion__ads-price {
+  font-family: "Manrope-700", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0 0 16px;
+}
+
+.promotion__ads-date {
+  font-family: "Manrope-500", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}
+
+.promotion__consultation {
+  font-family: "Manrope-600";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 0 24px;
+
+  & span {
+    color: #0347AE;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.promotion__wrapper {
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+}
+
+.promotion__button {
+  width: 100%;
+  margin-bottom: 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
+}
+
+.promotion__socials {
+  justify-content: center;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+  }
+}

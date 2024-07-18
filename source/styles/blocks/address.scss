@@ -81,46 +81,6 @@
   }
 }
 
-.address__socials {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  column-gap: 16px;
-  align-items: center;
-}
-
-.address__link {
-  width: 32px;
-  height: 32px;
-  background: no-repeat center;
-  display: block;
-
-  &--whatsapp {
-    background-image: url("../../icons/whatsapp.svg");
-  }
-
-  &--instagram {
-    background-image: url("../../icons/instagram.svg");
-  }
-
-  &--mail {
-    background-image: url("../../icons/mail.svg");
-  }
-
-  &--color.address__link--whatsapp {
-    background-image: url("../../icons/whatsapp-white.svg");
-  }
-
-  &--color.address__link--instagram {
-    background-image: url("../../icons/instagram-white.svg");
-  }
-
-  &--color.address__link--mail {
-    background-image: url("../../icons/mail-white.svg");
-  }
-}
-
 
 .address__eye {
   display: flex;

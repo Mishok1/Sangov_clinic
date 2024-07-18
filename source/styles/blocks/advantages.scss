@@ -1,0 +1,48 @@
+@use "../common/variables.scss";
+
+.advantages__container {
+  padding: 0 20px 40px;
+}
+
+.advantages__title {
+  margin: 0 0 24px;
+}
+
+.advantages__list {
+  margin: 0 0 40px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.advantages__item {
+  box-shadow: 0 2px 9px 1px #0000001A;
+  border-radius: 16px;
+}
+
+.advantages__wrapper {
+  padding: 24px 16px 0;
+}
+
+.advantages__subtitle {
+  margin: 0;
+  padding: 0 0 8px;
+  border-bottom: 1px solid #333333;
+  color: #0347AE;
+  font-family: "Manrope-600", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.advantages__description {
+  margin: 8px 0 24px;
+}
+
+.advantages__image {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+}

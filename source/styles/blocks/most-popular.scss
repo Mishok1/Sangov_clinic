@@ -1,12 +1,5 @@
 @use "../common/variables.scss";
 
-.most-popular__container {
-  padding: 40px 20px;
-
-  @media (min-width: variables.$desktop-width) {
-    padding: 48px 123px;
-  }
-}
 
 .most-popular__title {
   margin-bottom: 24px;
@@ -33,10 +26,9 @@
   display: grid;
   grid-template-columns: 1fr 96px;
   column-gap: 36px;
-  // min-width: 335px;
 
   @media (min-width: variables.$desktop-width) {
-    min-width: 378px;
+    width: 378px;
   }
 }
 

@@ -1,0 +1,40 @@
+.doctor__container {
+  // padding: 40px 20px;
+}
+
+.doctor__title {
+  margin: 0 0 8px;
+}
+
+.doctor__name {
+  margin: 0 0 24px;
+}
+
+.doctor__image {
+  margin: 0 0 24px;
+  border-radius: 16px;
+}
+
+.doctor__description {
+  margin: 0 0 16px;
+}
+
+.doctor__education {
+  margin: 0 0 24px;
+}
+
+.doctor__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.doctor__button {
+  min-width: 335px;
+  height: 46px;
+  margin: 0 0 16px;
+}
+
+.doctor__socials {
+  justify-content: center;
+}

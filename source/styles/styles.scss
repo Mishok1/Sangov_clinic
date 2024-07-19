@@ -6,20 +6,33 @@
 @import "./common/visually-hidden.scss";
 @import "./common/button.scss";
 @import "./common/title.scss";
+@import "./common/swiper.scss";
+
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+
 @import "./blocks/logo.scss";
 @import "./blocks/address.scss";
 @import "./blocks/socials.scss";
 @import "./blocks/menu-wrapper.scss";
 @import "./blocks/menu.scss";
+
 @import "./blocks/hero.scss";
 @import "./blocks/rating.scss";
 @import "./blocks/most-popular.scss";
+@import "./blocks/before-after.scss";
 @import "./blocks/promo.scss";
 @import "./blocks/services.scss";
 @import "./blocks/promotion.scss";
 @import "./blocks/advantages.scss";
+@import "./blocks/follow.scss";
+@import "./blocks/about.scss";
+@import "./blocks/doctor.scss";
+@import "./blocks/certificates.scss";
+@import "./blocks/team.scss";
+@import "./blocks/works.scss";
+@import "./blocks/review.scss";
+@import "./blocks/consultation.scss";
 
 @import "./blocks/footer.scss";

@@ -1,15 +1,14 @@
 @use "../common/variables.scss";
 
 .promo__container {
-  padding: 40px 8px;
   position: relative;
-  height: 720px;
 
   @media (min-width: variables.$desktop-width) {
     height: auto;
     display: flex;
     align-items: center;
-    padding: 48px 123px;
+    justify-content: center;
+    width: 100%;
   }
 }
 
@@ -23,7 +22,7 @@
   @media (min-width: variables.$desktop-width) {
     width: 716px;
     margin: 0;
-    flex-shrink: 0;
+
   }
 }
 
@@ -40,14 +39,20 @@
   height: 46px;
 }
 
+.promo__picture {
+  display: contents;
+}
+
 .promo__image {
   display: block;
   position: relative;
   top: -76px;
   z-index: -1;
+  border-radius: 16px;
 
   @media (min-width: variables.$desktop-width) {
     top: 0;
-    left: -82px;
+    left: -104px;
+    flex-shrink: 0;
   }
 }

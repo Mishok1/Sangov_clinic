@@ -1,10 +1,8 @@
 @use "../common/variables.scss";
 
 .promotion__container {
-  padding: 40px 20px;
 
   @media (min-width: variables.$desktop-width) {
-    padding: 48px 123px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
@@ -19,11 +17,8 @@
 }
 
 .promotion__description {
-  font-family: "Manrope-600", sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 28px;
   margin: 0 0 16px;
+  color: #333333;
 
   @media (min-width: variables.$desktop-width) {
     grid-column: 1 / 2;
@@ -46,6 +41,11 @@
   line-height: 40px;
   color: #0347AE;
   margin-right: 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 64px;
+    line-height: 64px;
+  }
 }
 
 .promotion__old-price {

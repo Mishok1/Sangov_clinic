@@ -1,0 +1,36 @@
+.consultation {}
+
+// .consultation__container {
+//   padding: 20px 40px;
+// }
+
+.consultation__wrapper {
+  padding: 24px 16px;
+  box-shadow: 0 2px 9px 1px #0000001A;
+  border-radius: 16px;
+
+}
+
+.consultation__title {
+  margin: 0 0 8px;
+}
+
+.consultation__text {
+  margin: 0 0 24px;
+}
+
+.consultation__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.consultation__input {
+  padding: 7px 38px;
+  border: 1px solid #0347AE;
+  border-radius: 16px;
+
+  &::placeholder {
+    color: #1A1919;
+  }
+}

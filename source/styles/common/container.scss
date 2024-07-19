@@ -2,8 +2,12 @@
 
 .container {
   margin: 0 auto;
+  padding: 0 20px;
+  // width: 375px;
 
-  // @media (min-width: variables.$desktop-width) {
-  //   // min-width: variables.$desktop-width;
-  // }
+
+  @media (min-width: variables.$desktop-width) {
+    width: 100%;
+    padding: 0 123px;
+  }
 }

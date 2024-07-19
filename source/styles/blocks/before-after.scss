@@ -1,0 +1,9 @@
+@use '../common/variables.scss';
+
+.before-after__container {
+  // padding: 0 20px;
+
+  @media (min-width: variables.$desktop-width) {
+    // padding: 0 123px;
+  }
+}

@@ -1,0 +1,1 @@
+var e=document.querySelector(".header__mobile-button"),o=document.querySelector(".mobile"),n=document.querySelector(".header__container");e.addEventListener("click",t=>{t.preventDefault(),e.classList.toggle("header__mobile-button--open"),o.classList.toggle("mobile--open"),n.classList.toggle("header__container--open")});

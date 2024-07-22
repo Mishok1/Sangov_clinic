@@ -1,3 +1,9 @@
-.works__container {
-  // padding: 0 20px 40px;
+@use '../common/variables.scss';
+
+.works {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
 }

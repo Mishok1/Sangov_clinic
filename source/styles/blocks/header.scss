@@ -4,9 +4,8 @@
   line-height: 21.86px;
 }
 
-
 .header__container {
-  // padding: 8px 20px;
+  padding: 8px 20px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -28,6 +27,10 @@
     &::after {
       display: none;
     }
+  }
+
+  &--open {
+    background-color: #FFFFFFF2;
   }
 }
 
@@ -62,9 +65,15 @@
 .header__mobile-button {
   width: 45px;
   height: 25px;
-  background-color: #c11c50;
+  background: url('../../images/mobile-button.svg') no-repeat center;
 
   @media (min-width: variables.$desktop-width) {
     display: none;
+  }
+
+  &--open {
+    background-image: url('../../images/mobile-button-open.svg');
+    width: 34px;
+    height: 34px;
   }
 }

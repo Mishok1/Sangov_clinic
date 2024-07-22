@@ -1,14 +1,33 @@
-.consultation {}
+@use '../common/variables.scss';
 
-// .consultation__container {
-//   padding: 20px 40px;
-// }
+.consultation {
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px
+  }
+}
+
+.consultation__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 8px;
+
+  @media (min-width: variables.$desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 123px;
+  }
+}
 
 .consultation__wrapper {
   padding: 24px 16px;
   box-shadow: 0 2px 9px 1px #0000001A;
   border-radius: 16px;
-
+  z-index: 1;
+  background-color: #FFFFFF;
+  margin: 0 10px;
 }
 
 .consultation__title {
@@ -25,10 +44,35 @@
   row-gap: 16px;
 }
 
+.consultation__picture {
+  position: relative;
+  top: -62px;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @media (min-width: variables.$desktop-width) {
+    top: 0;
+    left: -170px;
+  }
+}
+
+.consultation__image {
+  border-radius: 16px;
+  object-fit: cover;
+  width: 100%;
+}
+
 .consultation__input {
   padding: 7px 38px;
   border: 1px solid #0347AE;
   border-radius: 16px;
+  width: 100%;
+  font-family: "Manrope-500", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
 
   &::placeholder {
     color: #1A1919;

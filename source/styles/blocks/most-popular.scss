@@ -1,6 +1,14 @@
 @use "../common/variables.scss";
 
 
+.most-popular {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
 .most-popular__title {
   margin-bottom: 24px;
 }

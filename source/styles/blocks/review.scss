@@ -1,0 +1,27 @@
+@use '../common/variables.scss';
+
+.review {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.review__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.review__date {
+  margin: 0;
+}
+
+.review__name {
+  font-family: "Manrope-500", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+}

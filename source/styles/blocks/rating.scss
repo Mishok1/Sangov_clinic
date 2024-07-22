@@ -1,3 +1,13 @@
+@use '../common/variables.scss';
+
+.rating {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
 .rating__list {
   list-style-type: none;
   margin: 0;

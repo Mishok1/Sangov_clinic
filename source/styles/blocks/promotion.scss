@@ -1,5 +1,13 @@
 @use "../common/variables.scss";
 
+.promotion {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
 .promotion__container {
 
   @media (min-width: variables.$desktop-width) {
@@ -156,6 +164,17 @@
 
   @media (min-width: variables.$desktop-width) {
     grid-column: 1 / 2;
+    text-align: left;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.promotion__hyphen {
+  display: none;
+
+  @media (min-width: variables.$desktop-width) {
+    display: inline;
   }
 }
 
@@ -173,8 +192,8 @@
   margin-bottom: 16px;
 
   @media (min-width: variables.$desktop-width) {
-    grid-column: 1 / 2;
     margin: 0;
+    width: 276px;
   }
 }
 

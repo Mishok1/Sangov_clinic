@@ -93,9 +93,79 @@
         <button class="header__mobile-button button" type="button">
           <span class="visually-hidden">Кнопка открытыя меню</span>
         </button>
+
+      </div>
+
+
+      <div class="header__mobile mobile">
+        <ul class="mobile__menu menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">Услуги</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Цены</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Наши работы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Врачи</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <address class="mobile__address address">
+          <ul class="mobile__address-list address__list">
+            <li class="mobile__address-item address__item address__item--map">
+              <p>г. Новосибирск, ул. Советская, д. 46/2</p>
+            </li>
+            <li class="address__item address__item--clock">
+              <p>Ежедневно с 9:00 до 21:00</p>
+            </li>
+            <li class="address__item address__item--tel">
+              <a href="tel:+73832093255">+7(383)2093255</a>
+            </li>
+            <li class="address__item address__item--tel">
+              <a href="tel:+79639456363">+7(963)9456363</a>
+            </li>
+          </ul>
+
+          <ul class="socials">
+            <li class="socials__social ">
+              <a class="socials__link socials__link--whatsapp" href="#wt">
+                <span class="visually-hidden">What's App</span>
+              </a>
+            </li>
+            <li class="socials__social">
+              <a class="socials__link socials__link--instagram" href="#inst">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="socials__social">
+              <button class="socials__link socials__link--mail button" type="button">
+                <span class="visually-hidden">Email</span>
+              </button>
+            </li>
+          </ul>
+        </address>
+
+        <div class="mobile__search">
+          <button class="mobile__button button button--primary" type="button">Записаться</button>
+          <form class="mobile__form" action="#" method="post">
+            <label>
+              <input class="mobile__input" type="text" name="search" placeholder="Поиск">
+            </label>
+          </form>
+        </div>
       </div>
 
     </div>
+
+
   </header>
 
   <main>
@@ -302,7 +372,7 @@
         </picture>
         <p class="promotion__description title title--size-small">Имплантация за</p>
         <div class="promotion__prices">
-          <span class="promotion__price">26 500 ₽</span>
+          <span class="promotion__price">28 000 ₽</span>
         </div>
 
         <div class="promotion__offer">
@@ -317,7 +387,9 @@
           <p class="promotion__ads-date">До 07.07.2024</p>
         </div>
 
-        <p class="promotion__consultation">Консультация специалистов<br><span>БЕСПЛАТНО</span></p>
+        <p class="promotion__consultation">Консультация специалистов <span class="promotion__hyphen">-</span>
+          <span>БЕСПЛАТНО</span>
+        </p>
         <div class="promotion__wrapper">
           <button class="promotion__button button button--primary">Записаться</button>
           <ul class="promotion__socials socials">
@@ -394,24 +466,24 @@
             </picture>
           </li>
         </ul>
-        <section class="promo">
-          <div class="promo__container">
-            <div class="promo__wrapper">
-              <h2 class="promo__title title title--size-small">Мы работаем с микроскопом!</h2>
-              <p class="promo__text">Использование стоматологического микроскопа позволяет нам проводить
-                лечение с высокой точностью. Благодаря увеличению мы можем лучше видеть мельчайшие детали,
-                что обеспечивает более эффективное и безопасное лечение
-                для наших пациентов.</p>
-              <button class="promo__button button button--primary">Записаться</button>
-            </div>
-            <picture>
-              <source media="(min-width: 1440px)" type="image/png" srcset="images/girl-cleaning.png" width="582"
-                height="358">
-              <img class="promo__image" src="images/girl-cleaning-small.png" width="357" height="250"
-                alt="Чистка зубов.">
-            </picture>
-          </div>
-        </section>
+      </div>
+    </section>
+
+    <section class="promo">
+      <div class="promo__container container">
+        <div class="promo__wrapper">
+          <h2 class="promo__title title title--size-small">Лучшая чистка зубов в Новосибирске</h2>
+          <p class="promo__text">В нашей клинике в Новосибирске предлагается лучшая чистка зубов. Мы используем
+            современные технологии и индивидуальный подход, чтобы обеспечить глубокое очищение, удаление зубного камня и
+            налета, улучшение здоровья десен и свежесть дыхания. Доверьтесь нашим профессионалам для достижения
+            идеальной улыбки!</p>
+          <button class="promo__button button button--primary">Записаться</button>
+        </div>
+        <picture class="promo__picture">
+          <source media="(min-width: 1440px)" type="image/png" srcset="images/girl-cleaning.png" width="582"
+            height="358">
+          <img class="promo__image" src="images/girl-cleaning-small.png" width="335" height="250" alt="Чистка зубов.">
+        </picture>
       </div>
     </section>
 
@@ -463,16 +535,23 @@
 
     <section class="about">
       <div class="about__container container">
-        <img class="about__image" src="images/small-doctor-showing.png" width="335" height="250" alt="Доктора.">
-        <h2 class="about__title title">О клинике</h2>
-        <p class="about__description">Наша клиника открылась в 2022 году.
-          Мы предлагаем полный спектр стоматологических услуг: лечение зубов, имплантация, протезирование, эстетическая
-          коррекция улыбки, хирургическая помощь и многое другое. Клиника оснащена новейшим оборудованием, а в ней
-          работают высококвалифицированные врачи.
-          Также, оказывая стоматологическую помощь, мы не забываем и о маленьких пациентах. Благодаря индивидуальному
-          подходу, наши пациенты с первого визита чувствуют себя уверенно и комфортно.
-        </p>
-        <button class="about__button button button--primary" type="button">Записаться</button>
+        <picture class="about__picture">
+          <source media="(min-width: 1440px)" type="image/png" srcset="images/small-doctor-showing-desktop.png"
+            width="582" height="328">
+          <img class="about__image" src="images/small-doctor-showing.png" width="335" height="250" alt="Доктора.">
+        </picture>
+        <div class="about__wrapper">
+          <h2 class="about__title title">О клинике</h2>
+          <p class="about__description">Наша клиника открылась в 2022 году.
+            Мы предлагаем полный спектр стоматологических услуг: лечение зубов, имплантация, протезирование,
+            эстетическая
+            коррекция улыбки, хирургическая помощь и многое другое. Клиника оснащена новейшим оборудованием, а в ней
+            работают высококвалифицированные врачи.
+            Также, оказывая стоматологическую помощь, мы не забываем и о маленьких пациентах. Благодаря индивидуальному
+            подходу, наши пациенты с первого визита чувствуют себя уверенно и комфортно.
+          </p>
+          <button class="about__button button button--primary" type="button">Записаться</button>
+        </div>
       </div>
     </section>
 
@@ -480,7 +559,11 @@
       <div class="doctor__container container">
         <h2 class="doctor__title title">Главный врач</h2>
         <p class="doctor__name">Сангов Абдулло Мамашарифович</p>
-        <img class="doctor__image" src="images/doctor-foto.png" width="335" height="300" alt="Доктор.">
+        <picture class="doctor__picture">
+          <source media="(min-width: 1440px)" type="image/png" srcset="images/doctor-foto-desktop.png" width="582"
+            height="818">
+          <img class="doctor__image" src="images/doctor-foto.png" width="335" height="300" alt="Доктор.">
+        </picture>
         <p class="doctor__description">Главный врач стоматолог (хирург-имплантолог, ортопед, терапевт) Абдулло
           Мамашарифович – хирург-стоматолог со стажем более 8 лет.Специалист в реконструктивной хирургии (костная
           пластика, синус-лифтинг, аугментация). Проводит операции по микрохирургической пластике дёсен. Работает только
@@ -559,7 +642,7 @@
     <section class="promo">
       <div class="promo__container container">
         <div class="promo__wrapper">
-          <h2 class="promo__title title title--size-small">Красивая Улыбка с Винирами и Коронками в Новосибирске</h2>
+          <h2 class="promo__title title title--size-small">Красивая Улыбка с Винирами и Коронками</h2>
           <p class="promo__text">Добейтесь совершенной улыбки с нашими высококачественными винирами и коронками. Мы
             предлагаем индивидуальные решения для восстановления и улучшения зубов, обеспечивая естественный внешний вид
             и долговечность.</p>
@@ -569,7 +652,7 @@
           </div>
           <button class="promo__button button button--primary">Записаться</button>
         </div>
-        <picture>
+        <picture class="promo__picture">
           <source media="(min-width: 1440px)" type="image/png" srcset="images/girl-cleaning.png" width="582"
             height="358">
           <img class="promo__image" src="images/girl-cleaning-small.png" width="357" height="250" alt="Чистка зубов.">
@@ -594,15 +677,16 @@
             <p class="review__date">20.05.2024</p>
             <h3 class="review__name">​Федор Ермолаев</h3>
             <div class="review__stars"></div>
-            <p>Была нестерпимая острая боль (абсцесс 8ки). Обзвонил клиник 25, и эта единственная где меня смогли принять через 40 минут. Снимок, обезболивание, быстрое и качественное удаление....</p>
+            <p>Была нестерпимая острая боль (абсцесс 8ки). Обзвонил клиник 25, и эта единственная где меня смогли
+              принять через 40 минут. Снимок, обезболивание, быстрое и качественное удаление....</p>
             <button class="review__button button">Читать целиком</button>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="consultation promo">
-      <div class="consultation__container promo__wrapper">
+    <section class="consultation">
+      <div class="consultation__container">
         <div class="consultation__wrapper">
           <h2 class="consultation__title title title--size-small">Записаться на консультацию</h2>
           <p class="consultation__text">Получите профессиональную помощь от наших экспертов, записавшись на
@@ -617,10 +701,10 @@
             <button class="consultation__button button button--primary" type="submit">Записаться</button>
           </form>
         </div>
-        <picture>
-          <source media="(min-width: 1440px)" type="image/png" srcset="images/girl-cleaning.png" width="582"
+        <picture class="consultation__picture">
+          <source media="(min-width: 1440px)" type="image/png" srcset="images/doctor-smile-desktop.png" width="582"
             height="358">
-          <img class="promo__image" src="images/doctor-smile.png" width="357" height="250" alt="Чистка зубов.">
+          <img class="consultation__image" src="images/doctor-smile.png" width="357" height="250" alt="Чистка зубов.">
         </picture>
       </div>
     </section>
@@ -628,7 +712,7 @@
     <section class="map">
       <div class="map__container container">
         <h2 class="visually-hidden">Карта</h2>
-        <!-- map -->
+        <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa80510c64053d66c050d8774e4cee13323b1f6e645742141a2ca7f4ef9774bcb&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
       </div>
     </section>
 

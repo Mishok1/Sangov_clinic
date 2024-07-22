@@ -1,10 +1,10 @@
 @use '../common/variables.scss';
 
-.follow__container {
-  // padding: 0 20px 40px;
+.follow {
+  margin: 0 0 40px;
 
   @media (min-width: variables.$desktop-width) {
-    // padding: 0 123px 48px;
+    margin: 0 0 48px;
   }
 }
 

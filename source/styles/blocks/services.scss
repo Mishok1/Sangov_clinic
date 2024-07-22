@@ -2,13 +2,11 @@
 
 .services {
   background-color: #0347AE;
-}
-
-.services__container {
-  // padding: 32px 20px;
+  padding: 32px 0;
+  margin: 0 0 40px;
 
   @media (min-width: variables.$desktop-width) {
-    // padding: 32px 123px;
+    margin: 0 0 48px;
   }
 }
 

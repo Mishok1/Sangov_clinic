@@ -1,10 +1,10 @@
 @use "../common/variables.scss";
 
-.advantages__container {
-  // padding: 0 20px 40px;
+.advantages {
+  margin: 0 0 40px;
 
   @media (min-width: variables.$desktop-width) {
-    // padding: 0 123px;
+    margin: 0 0 48px;
   }
 }
 

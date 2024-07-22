@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page-prices" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -7,11 +7,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+  <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.css">
+
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
-  <header class="header">
+<body class="page-prices__body">
+  <header class="page-prices__header header">
     <div class="header__container container">
       <address class="header__address address">
         <ul class="address__list">
@@ -103,17 +107,15 @@
     <section class="promo">
       <div class="promo__container container">
         <div class="promo__wrapper">
-          <h2 class="promo__title title title--size-small">Лучшая чистка зубов в Новосибирске</h2>
-          <p class="promo__text">В нашей клинике в Новосибирске предлагается лучшая чистка зубов. Мы используем
-            современные технологии и индивидуальный подход, чтобы обеспечить глубокое очищение, удаление зубного камня и
-            налета, улучшение здоровья десен и свежесть дыхания. Доверьтесь нашим профессионалам для достижения
-            идеальной улыбки!</p>
+          <h2 class="promo__title title">Сколько стоит лечение</h2>
+          <p class="promo__text">В нашей стоматологической клинике мы предлагаем широкий спектр услуг по доступным
+            ценам, чтобы вы могли получить качественное лечение, не переплачивая</p>
           <button class="promo__button button button--primary">Записаться</button>
         </div>
-        <picture class="promo__picture">
-          <source media="(min-width: 1440px)" type="image/png" srcset="images/girl-cleaning.png" width="582"
+        <picture class="promo__picture promo__picture--order">
+          <source media="(min-width: 1440px)" type="image/png" srcset="images/jaws-desktop.png" width="582"
             height="358">
-          <img class="promo__image" src="images/girl-cleaning-small.png" width="335" height="250" alt="Чистка зубов.">
+          <img class="promo__image" src="images/jaws.png" width="335" height="250" alt="Чистка зубов.">
         </picture>
       </div>
     </section>
@@ -126,7 +128,7 @@
             <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
             <div class="price__wrapper">
               <p class="price__text">стоимость</p>
-              <p class="price__sum">Бесплатно</p>
+              <p class="price__sum title">Бесплатно</p>
             </div>
             <button class="price__button button button--primary">Записаться</button>
           </li>
@@ -134,7 +136,7 @@
             <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
             <div class="price__wrapper">
               <p class="price__text">стоимость</p>
-              <p class="price__sum">Бесплатно</p>
+              <p class="price__sum title">Бесплатно</p>
             </div>
             <button class="price__button button button--primary">Записаться</button>
           </li>
@@ -142,7 +144,7 @@
             <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
             <div class="price__wrapper">
               <p class="price__text">стоимость</p>
-              <p class="price__sum">Бесплатно</p>
+              <p class="price__sum title">Бесплатно</p>
             </div>
             <button class="price__button button button--primary">Записаться</button>
           </li>
@@ -150,7 +152,7 @@
             <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
             <div class="price__wrapper">
               <p class="price__text">стоимость</p>
-              <p class="price__sum">Бесплатно</p>
+              <p class="price__sum title">Бесплатно</p>
             </div>
             <button class="price__button button button--primary">Записаться</button>
           </li>
@@ -158,7 +160,15 @@
             <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
             <div class="price__wrapper">
               <p class="price__text">стоимость</p>
-              <p class="price__sum">Бесплатно</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
             </div>
             <button class="price__button button button--primary">Записаться</button>
           </li>
@@ -174,7 +184,7 @@
             <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
             <div class="price__wrapper">
               <p class="price__text">стоимость</p>
-              <p class="price__sum">Бесплатно</p>
+              <p class="price__sum title">Бесплатно</p>
             </div>
             <button class="price__button button button--primary">Записаться</button>
           </li>
@@ -182,7 +192,7 @@
             <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
             <div class="price__wrapper">
               <p class="price__text">стоимость</p>
-              <p class="price__sum">Бесплатно</p>
+              <p class="price__sum title">Бесплатно</p>
             </div>
             <button class="price__button button button--primary">Записаться</button>
           </li>
@@ -190,7 +200,23 @@
             <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
             <div class="price__wrapper">
               <p class="price__text">стоимость</p>
-              <p class="price__sum">Бесплатно</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="price__container container">
+        <h2 class="price__title title">Терапия под микроскопом</h2>
+        <ul class="price__list">
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
             </div>
             <button class="price__button button button--primary">Записаться</button>
           </li>
@@ -198,7 +224,7 @@
             <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
             <div class="price__wrapper">
               <p class="price__text">стоимость</p>
-              <p class="price__sum">Бесплатно</p>
+              <p class="price__sum title">Бесплатно</p>
             </div>
             <button class="price__button button button--primary">Записаться</button>
           </li>
@@ -206,7 +232,135 @@
             <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
             <div class="price__wrapper">
               <p class="price__text">стоимость</p>
-              <p class="price__sum">Бесплатно</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="price__container container">
+        <h2 class="price__title title">Терапия под микроскопом</h2>
+        <ul class="price__list">
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="price__container container">
+        <h2 class="price__title title">Терапия под микроскопом</h2>
+        <ul class="price__list">
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="price__container container">
+        <h2 class="price__title title">Терапия под микроскопом</h2>
+        <ul class="price__list">
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="price__container container">
+        <h2 class="price__title title">Терапия под микроскопом</h2>
+        <ul class="price__list">
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
+            </div>
+            <button class="price__button button button--primary">Записаться</button>
+          </li>
+          <li class="price__item">
+            <h3 class="price__subtitle">Консультация, осмотр врача терапевта</h3>
+            <div class="price__wrapper">
+              <p class="price__text">стоимость</p>
+              <p class="price__sum title">Бесплатно</p>
             </div>
             <button class="price__button button button--primary">Записаться</button>
           </li>
@@ -278,15 +432,16 @@
             <p class="review__date">20.05.2024</p>
             <h3 class="review__name">​Федор Ермолаев</h3>
             <div class="review__stars"></div>
-            <p>Была нестерпимая острая боль (абсцесс 8ки). Обзвонил клиник 25, и эта единственная где меня смогли принять через 40 минут. Снимок, обезболивание, быстрое и качественное удаление....</p>
+            <p>Была нестерпимая острая боль (абсцесс 8ки). Обзвонил клиник 25, и эта единственная где меня смогли
+              принять через 40 минут. Снимок, обезболивание, быстрое и качественное удаление....</p>
             <button class="review__button button">Читать целиком</button>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="consultation promo">
-      <div class="consultation__container promo__wrapper">
+    <section class="consultation">
+      <div class="consultation__container">
         <div class="consultation__wrapper">
           <h2 class="consultation__title title title--size-small">Записаться на консультацию</h2>
           <p class="consultation__text">Получите профессиональную помощь от наших экспертов, записавшись на
@@ -301,10 +456,10 @@
             <button class="consultation__button button button--primary" type="submit">Записаться</button>
           </form>
         </div>
-        <picture>
-          <source media="(min-width: 1440px)" type="image/png" srcset="images/girl-cleaning.png" width="582"
+        <picture class="consultation__picture">
+          <source media="(min-width: 1440px)" type="image/png" srcset="images/doctor-smile-desktop.png" width="582"
             height="358">
-          <img class="promo__image" src="images/doctor-smile.png" width="357" height="250" alt="Чистка зубов.">
+          <img class="consultation__image" src="images/doctor-smile.png" width="357" height="250" alt="Чистка зубов.">
         </picture>
       </div>
     </section>
@@ -314,26 +469,27 @@
         <h2 class="team__title title title--color">Наши врачи</h2>
 
         <!-- slider/ list slider
-        <ul class="team__list">
-          <li class="team__item">
-            <img class="team__image" src="images/doctor-sangov.png" width="335" height="250" alt="Доктор Сангов.">
-            <h3 class="team__subtitle"><span class="title title--size-small title--color">Сангов</span><br>Абдулло Мамашарифович</h3>
-            <p class="team__text">Главный врач стоматолог, хирург-имплантолог, ортопед, терапевт<br><br>Ксения Владимировна-специализируется на лечении кариеса,художественной реставрации жевательной и центральной группы зубов, эндодонтическом лечении. Стоматологический прием проводит только под микроскопом,
-              в  период лечения ведется фотопротокол.</p>
-              <a class="team__link" href="instagram"></a>
-              <a class="team__link" href="noname"></a>
-          </li>
-        </ul>
-        -->
+          <ul class="team__list">
+            <li class="team__item">
+              <img class="team__image" src="images/doctor-sangov.png" width="335" height="250" alt="Доктор Сангов.">
+              <h3 class="team__subtitle"><span class="title title--size-small title--color">Сангов</span><br>Абдулло Мамашарифович</h3>
+              <p class="team__text">Главный врач стоматолог, хирург-имплантолог, ортопед, терапевт<br><br>Ксения Владимировна-специализируется на лечении кариеса,художественной реставрации жевательной и центральной группы зубов, эндодонтическом лечении. Стоматологический прием проводит только под микроскопом,
+                в  период лечения ведется фотопротокол.</p>
+                <a class="team__link" href="instagram"></a>
+                <a class="team__link" href="noname"></a>
+            </li>
+          </ul>
+          -->
       </div>
     </section>
 
     <section class="map">
       <div class="map__container container">
         <h2 class="visually-hidden">Карта</h2>
-        <!-- map -->
+        <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa80510c64053d66c050d8774e4cee13323b1f6e645742141a2ca7f4ef9774bcb&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
       </div>
     </section>
+
 
   </main>
 

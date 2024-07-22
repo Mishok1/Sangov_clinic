@@ -1,0 +1,71 @@
+@use '../common/variables.scss';
+
+.price {
+  margin: 0 0 40px;
+}
+
+.price__title {
+  margin: 0 0 24px;
+}
+
+.price__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.price__item {
+  padding: 24px 16px;
+  border: 1px solid #0347AE;
+  box-shadow: 0 2px 9px 1px #0000001A;
+  border-radius: 16px;
+  color: #1A1919;
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 19px 32px;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+  }
+}
+
+.price__subtitle {
+  font-family: "Manrope-600", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #0347AE;
+  margin: 0 0 24px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 auto 0 0;
+  }
+}
+
+.price__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  margin: 0 0 8px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 32px 0 0;
+  }
+}
+
+.price__text {
+  margin: 0;
+}
+
+.price__sum {
+  color: #0347AE;
+}
+
+.price__button {
+  @media (min-width: variables.$desktop-width) {
+    width: 276px;
+  }
+}

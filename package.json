@@ -59,6 +59,6 @@
     "node": "18.20.4"
   },
   "dependencies": {
-    "swiper": "^11.1.5"
+    "@glidejs/glide": "^3.6.2"
   }
 }

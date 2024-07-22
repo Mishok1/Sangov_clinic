@@ -1,11 +1,19 @@
 @use "../common/variables.scss";
 
+.promo {
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
 .promo__container {
   position: relative;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: variables.$desktop-width) {
     height: auto;
-    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -16,18 +24,19 @@
   padding: 24px 16px;
   box-shadow: 0 2px 9px 1px #0000001A;
   border-radius: 16px;
-  margin: 0 12px;
+  margin: 0 10px;
   background-color: #FFFFFF;
 
   @media (min-width: variables.$desktop-width) {
     width: 716px;
     margin: 0;
-
+    padding: 32px;
   }
 }
 
 .promo__title {
   margin-bottom: 16px;
+
 }
 
 .promo__text {
@@ -40,19 +49,74 @@
 }
 
 .promo__picture {
-  display: contents;
-}
-
-.promo__image {
-  display: block;
   position: relative;
   top: -76px;
   z-index: -1;
-  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+
 
   @media (min-width: variables.$desktop-width) {
     top: 0;
     left: -104px;
     flex-shrink: 0;
   }
+
+  &--order {
+    order: -1;
+    top: 32px;
+
+    @media (min-width: variables.$desktop-width) {
+      order: 0;
+      top: 0;
+      left: -104px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.promo__image {
+  display: block;
+  border-radius: 16px;
+  object-fit: cover;
+  width: 100%;
+
+  // @media (min-width: variables.$desktop-width) {
+  //   width: none;
+  // }
+}
+
+.promo__prices {
+  font-family: "Manrope-600", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 24px;
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.promo__price {
+  font-family: "Manrope-700";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #0347AE;
+
+  @media (min-width: variables.$desktop-width) {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+  }
+}
+
+.promo__old-price {
+  text-decoration: line-through;
 }

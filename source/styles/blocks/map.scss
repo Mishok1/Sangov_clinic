@@ -1,6 +1,6 @@
 @use '../common/variables.scss';
 
-.before-after {
+.map {
   margin: 0 0 40px;
 
   @media (min-width: variables.$desktop-width) {
@@ -8,10 +8,10 @@
   }
 }
 
-.before-after__container {
-  // padding: 0 20px;
+.map__frame {
+  border-radius: 32px;
 
   @media (min-width: variables.$desktop-width) {
-    // padding: 0 123px;
+    height: 400px;
   }
 }

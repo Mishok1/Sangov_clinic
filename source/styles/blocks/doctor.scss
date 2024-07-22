@@ -1,32 +1,86 @@
+@use '../common/variables.scss';
+
+.doctor {
+  margin: 0 0 40px;
+}
+
 .doctor__container {
-  // padding: 40px 20px;
+
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 24px;
+  }
 }
 
 .doctor__title {
   margin: 0 0 8px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
 }
 
 .doctor__name {
   margin: 0 0 24px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
+}
+
+.doctor__picture {
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+    margin: 0;
+  }
 }
 
 .doctor__image {
   margin: 0 0 24px;
   border-radius: 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
 }
 
 .doctor__description {
   margin: 0 0 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
 }
 
 .doctor__education {
   margin: 0 0 24px;
+  color: #0347AE;
+  font-family: "Manrope-600", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
 }
 
 .doctor__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+  }
 }
 
 .doctor__button {

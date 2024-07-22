@@ -1,0 +1,30 @@
+@use '../common/variables.scss';
+
+.video {
+  margin: 0 0 40px;
+}
+
+.video__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  @media (min-width: variables.$desktop-width) {
+    column-gap: 102px;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.video__title {
+  margin: 0 0 8px;
+}
+
+.video__button{
+  display: none;
+
+  @media (min-width: variables.$desktop-width) {
+    display: block;
+    width: 276px;
+  }
+}

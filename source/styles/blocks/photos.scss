@@ -1,0 +1,59 @@
+@use '../common/variables.scss';
+
+.photos {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.photos__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+}
+
+.photos__title {
+  margin: 0 0 24px;
+}
+
+.photos__item {
+  @media (min-width: variables.$desktop-width) {
+    &:nth-child(1) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+
+    &:nth-child(2) {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+
+    &:nth-child(3) {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+    }
+
+    &:nth-child(4) {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+    }
+  }
+}
+
+.photos__image {
+  border-radius: 16px;
+  object-fit: cover;
+  width: 100%;
+
+
+  @media (min-width: variables.$desktop-width) {}
+}

@@ -41,6 +41,8 @@
 .doctor__image {
   margin: 0 0 24px;
   border-radius: 16px;
+  width: 100%;
+  object-fit: cover;
 
   @media (min-width: variables.$desktop-width) {
     margin: 0;

@@ -1,0 +1,59 @@
+@use '../common/variables.scss';
+
+.comment {
+  background: url('../../images/comment-background.png') no-repeat center;
+  background-size: 100%;
+}
+
+.comment__container {
+  padding: 24px 20px;
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 48px;
+    width: 581px;
+    padding: 32px;
+  }
+
+}
+
+.comment__wrapper {
+  padding: 24px 16px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.comment__title {
+  margin: 0 0 8px;
+}
+
+.comment__text {
+  margin: 0 0 24px;
+}
+
+.comment__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.comment__input {
+  background-color: inherit;
+  padding: 7px 24px;
+  border: 1px solid #0347ae;
+  border-radius: 16px;
+  width: 100%;
+  font-family: "Manrope-500", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+
+  &::placeholder {
+    color: #1A1919;
+  }
+
+  &--area {
+    min-height: 128px;
+    padding: 16px 24px;
+    resize: none;
+  }
+}

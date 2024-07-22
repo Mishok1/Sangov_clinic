@@ -22,10 +22,10 @@
 
 .promo__wrapper {
   padding: 24px 16px;
-  box-shadow: 0 2px 9px 1px #0000001A;
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   margin: 0 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   @media (min-width: variables.$desktop-width) {
     width: 716px;
@@ -36,7 +36,6 @@
 
 .promo__title {
   margin-bottom: 16px;
-
 }
 
 .promo__text {
@@ -104,11 +103,11 @@
 }
 
 .promo__price {
-  font-family: "Manrope-700";
+  font-family: "Manrope-700", sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
-  color: #0347AE;
+  color: #0347ae;
 
   @media (min-width: variables.$desktop-width) {
     font-size: 64px;

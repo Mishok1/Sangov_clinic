@@ -1,8 +1,8 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .consultation {
   @media (min-width: variables.$desktop-width) {
-    margin: 0 0 48px
+    margin: 0 0 48px;
   }
 }
 
@@ -23,10 +23,10 @@
 
 .consultation__wrapper {
   padding: 24px 16px;
-  box-shadow: 0 2px 9px 1px #0000001A;
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   z-index: 1;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin: 0 10px;
 }
 
@@ -66,7 +66,7 @@
 
 .consultation__input {
   padding: 7px 38px;
-  border: 1px solid #0347AE;
+  border: 1px solid #0347ae;
   border-radius: 16px;
   width: 100%;
   font-family: "Manrope-500", sans-serif;
@@ -75,6 +75,6 @@
   line-height: 24px;
 
   &::placeholder {
-    color: #1A1919;
+    color: #1a1919;
   }
 }

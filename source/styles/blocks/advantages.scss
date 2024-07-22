@@ -28,7 +28,7 @@
 
     &::after {
       content: "";
-      background: url('../../images/dark-tooth.png') no-repeat center;
+      background: url("../../images/dark-tooth.png") no-repeat center;
       width: 276px;
       border-radius: 16px;
       grid-column: 3 / 4;
@@ -38,7 +38,7 @@
 }
 
 .advantages__item {
-  box-shadow: 0 2px 9px 1px #0000001A;
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
 
   @media (min-width: variables.$desktop-width) {
@@ -57,7 +57,7 @@
   margin: 0;
   padding: 0 0 8px;
   border-bottom: 1px solid #333333;
-  color: #0347AE;
+  color: #0347ae;
   font-family: "Manrope-600", sans-serif;
   font-size: 24px;
   font-weight: 600;

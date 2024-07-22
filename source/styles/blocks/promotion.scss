@@ -9,7 +9,6 @@
 }
 
 .promotion__container {
-
   @media (min-width: variables.$desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -47,7 +46,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
-  color: #0347AE;
+  color: #0347ae;
   margin-right: 16px;
 
   @media (min-width: variables.$desktop-width) {
@@ -68,19 +67,11 @@
   object-fit: cover;
   border-radius: 32px;
   margin-bottom: 24px;
-
-
-}
-
-.promotion__description {
-  @media (min-width: variables.$desktop-width) {
-    grid-column: 1 / 2;
-  }
 }
 
 .promotion__offer {
   padding: 16px 30px;
-  border: 1px solid #0347AE;
+  border: 1px solid #0347ae;
   border-radius: 32px;
   margin-bottom: 24px;
 
@@ -94,7 +85,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: 40px;
-  color: #0347AE;
+  color: #0347ae;
   margin: 0 0 16px;
 }
 
@@ -108,8 +99,8 @@
 
 .promotion__ads {
   border-radius: 32px;
-  background-color: #0347AE;
-  color: #FFFFFF;
+  background-color: #0347ae;
+  color: #ffffff;
   padding: 24px 32px;
   margin: 0 0 24px;
 
@@ -151,7 +142,7 @@
 }
 
 .promotion__consultation {
-  font-family: "Manrope-600";
+  font-family: "Manrope-600", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -159,7 +150,7 @@
   margin: 0 0 24px;
 
   & span {
-    color: #0347AE;
+    color: #0347ae;
   }
 
   @media (min-width: variables.$desktop-width) {

@@ -30,7 +30,7 @@
 .most-popular__item {
   padding: 24px;
   border-radius: 16px;
-  box-shadow: 0 2px 9px 1px #0000001A;
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: 1fr 96px;
   column-gap: 36px;

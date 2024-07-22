@@ -1,4 +1,4 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .follow {
   margin: 0 0 40px;
@@ -13,7 +13,7 @@
 }
 
 .follow__wrapper {
-  background: url('../../images/insta-back.png') no-repeat center;
+  background: url("../../images/insta-back.png") no-repeat center;
   border-radius: 16px;
   // background-size: cover;
   width: 335px;
@@ -25,7 +25,7 @@
     display: flex;
     padding: 42px 72px;
     width: 100%;
-    background-image: url('../../images/insta-back-desktop.png');
+    background-image: url("../../images/insta-back-desktop.png");
     background-size: cover;
     align-items: center;
   }
@@ -44,7 +44,7 @@
 }
 
 .follow__logo {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 50%;
   padding: 2px;
 }
@@ -52,7 +52,7 @@
 .follow__logo-text {
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .follow__button {
@@ -72,9 +72,8 @@
   row-gap: 24px;
 
   @media (min-width: variables.$desktop-width) {
-    flex-direction: row;
+    flex-flow: row wrap;
     column-gap: 30px;
-    flex-wrap: wrap;
   }
 }
 

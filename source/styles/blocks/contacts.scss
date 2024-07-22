@@ -1,0 +1,96 @@
+@use '../common/variables.scss';
+
+.contacts {
+  margin: 40px 0;
+}
+
+.contacts__container {
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    column-gap: 30px;
+  }
+}
+
+.contacts__address {
+  margin: 0 0 40px;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 2px 9px 1px #0000001A;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  font-style: normal;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+    min-width: 480px;
+  }
+}
+
+.contacts__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  // margin: 0 0 24px;
+
+}
+
+.contacts__item {
+  font-family: "Manrope-500", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.contacts__subtitle {
+  margin: 0;
+  color: #333333;
+  font-family: "Manrope-500", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.contacts__link {
+  background-color: #429209;
+  width: 100%;
+  padding: 13px;
+  border-radius: 16px;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.contacts__map {
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.contacts__map-container {
+  @media (min-width: variables.$desktop-width) {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.contacts__map-frame {
+  @media (min-width: variables.$desktop-width) {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,16 +1,14 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .doctor {
   margin: 0 0 40px;
 }
 
 .doctor__container {
-
   @media (min-width: variables.$desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 24px;
+    gap: 24px 30px;
   }
 }
 
@@ -33,7 +31,6 @@
 }
 
 .doctor__picture {
-
   @media (min-width: variables.$desktop-width) {
     grid-column: 2 / 3;
     grid-row: 1 / 6;
@@ -61,7 +58,7 @@
 
 .doctor__education {
   margin: 0 0 24px;
-  color: #0347AE;
+  color: #0347ae;
   font-family: "Manrope-600", sans-serif;
   font-size: 20px;
   font-weight: 600;

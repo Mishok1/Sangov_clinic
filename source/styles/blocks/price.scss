@@ -1,4 +1,4 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .price {
   margin: 0 0 40px;
@@ -19,10 +19,10 @@
 
 .price__item {
   padding: 24px 16px;
-  border: 1px solid #0347AE;
-  box-shadow: 0 2px 9px 1px #0000001A;
+  border: 1px solid #0347ae;
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
-  color: #1A1919;
+  color: #1a1919;
 
   @media (min-width: variables.$desktop-width) {
     padding: 19px 32px;
@@ -37,7 +37,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
-  color: #0347AE;
+  color: #0347ae;
   margin: 0 0 24px;
 
   @media (min-width: variables.$desktop-width) {
@@ -61,7 +61,7 @@
 }
 
 .price__sum {
-  color: #0347AE;
+  color: #0347ae;
 }
 
 .price__button {

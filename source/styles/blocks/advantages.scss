@@ -30,6 +30,8 @@
       content: "";
       background: url("../../images/dark-tooth.png") no-repeat center;
       width: 276px;
+      width: 100%;
+      background-size: cover;
       border-radius: 16px;
       grid-column: 3 / 4;
       grid-row: 1 / 3;

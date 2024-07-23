@@ -79,13 +79,19 @@
 
 .follow__item {
   @media (min-width: variables.$desktop-width) {
-    width: 378px;
+    width: 31.65%;
   }
 }
 
 
 .follow__image {
   margin: 0 0 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
 }
 
 .follow__text {

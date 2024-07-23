@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html class="page-prices" lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
-  <title>Clinic</title>
+  <title>Цены</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
-
-  <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
-  <link rel="stylesheet" href="../node_modules/@glidejs/glide/dist/css/glide.core.css">
-
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page-prices__body">
-  <header class="page-prices__header header">
+<body class="page__body">
+  <header class="header">
     <div class="header__container container">
       <address class="header__address address">
         <ul class="address__list">
@@ -65,22 +61,22 @@
         <div class="header__menu-wrapper menu-wrapper">
           <ul class="menu-wrapper__list menu">
             <li class="menu__item">
-              <a class="menu__link" href="#">Услуги</a>
+              <a class="menu__link" href="/services.html">Услуги</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Цены</a>
+              <a class="menu__link" href="/prices.html">Цены</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Наши работы</a>
+              <a class="menu__link" href="/our-works.html">Наши работы</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Врачи</a>
+              <a class="menu__link" href="/our-doctors.html">Врачи</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">О нас</a>
+              <a class="menu__link" href="/about.html">О нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Контакты</a>
+              <a class="menu__link" href="/contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
@@ -97,12 +93,83 @@
         <button class="header__mobile-button button" type="button">
           <span class="visually-hidden">Кнопка открытыя меню</span>
         </button>
+
+      </div>
+
+
+      <div class="header__mobile mobile">
+        <ul class="mobile__menu menu">
+          <li class="menu__item">
+            <a class="menu__link" href="/services.html">Услуги</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/prices.html">Цены</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/our-works.html">Наши работы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/our-doctors.html">Врачи</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/about.html">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/contacts.html">Контакты</a>
+          </li>
+        </ul>
+        <address class="mobile__address address">
+          <ul class="mobile__address-list address__list">
+            <li class="mobile__address-item address__item address__item--map">
+              <p>г. Новосибирск, ул. Советская, д. 46/2</p>
+            </li>
+            <li class="address__item address__item--clock">
+              <p>Ежедневно с 9:00 до 21:00</p>
+            </li>
+            <li class="address__item address__item--tel">
+              <a href="tel:+73832093255">+7(383)2093255</a>
+            </li>
+            <li class="address__item address__item--tel">
+              <a href="tel:+79639456363">+7(963)9456363</a>
+            </li>
+          </ul>
+
+          <ul class="socials">
+            <li class="socials__social ">
+              <a class="socials__link socials__link--whatsapp" href="#wt">
+                <span class="visually-hidden">What's App</span>
+              </a>
+            </li>
+            <li class="socials__social">
+              <a class="socials__link socials__link--instagram" href="#inst">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="socials__social">
+              <button class="socials__link socials__link--mail button" type="button">
+                <span class="visually-hidden">Email</span>
+              </button>
+            </li>
+          </ul>
+        </address>
+
+        <div class="mobile__search">
+          <button class="mobile__button button button--primary" type="button">Записаться</button>
+          <form class="mobile__form" action="#" method="post">
+            <label>
+              <input class="mobile__input" type="text" name="search" placeholder="Поиск">
+            </label>
+          </form>
+        </div>
       </div>
 
     </div>
+
+
   </header>
 
   <main>
+    <h1 class="visually-hidden">Цены</h1>
 
     <section class="promo">
       <div class="promo__container container">
@@ -468,25 +535,77 @@
       <div class="team__container container">
         <h2 class="team__title title title--color">Наши врачи</h2>
 
-        <!-- slider/ list slider
-          <ul class="team__list">
-            <li class="team__item">
-              <img class="team__image" src="images/doctor-sangov.png" width="335" height="250" alt="Доктор Сангов.">
-              <h3 class="team__subtitle"><span class="title title--size-small title--color">Сангов</span><br>Абдулло Мамашарифович</h3>
-              <p class="team__text">Главный врач стоматолог, хирург-имплантолог, ортопед, терапевт<br><br>Ксения Владимировна-специализируется на лечении кариеса,художественной реставрации жевательной и центральной группы зубов, эндодонтическом лечении. Стоматологический прием проводит только под микроскопом,
-                в  период лечения ведется фотопротокол.</p>
-                <a class="team__link" href="instagram"></a>
-                <a class="team__link" href="noname"></a>
-            </li>
-          </ul>
-          -->
+        <!-- slider/ list slider -->
+         <!-- it's one slide -->
+        <ul class="team__list">
+          <li class="team__item">
+            <img class="team__image" src="images/doctor-sangov.png" width="335" height="250" alt="Доктор Сангов.">
+            <h3 class="team__subtitle"><span class="title title--size-small title--color">Сангов</span>Абдулло
+              Мамашарифович</h3>
+            <p class="team__text">Главный врач стоматолог, хирург-имплантолог, ортопед, терапевт<br><br>Ксения
+              Владимировна-специализируется на лечении кариеса,художественной реставрации жевательной и центральной
+              группы зубов, эндодонтическом лечении. Стоматологический прием проводит только под микроскопом,
+              в период лечения ведется фотопротокол.</p>
+            <ul class="team__socials socials">
+              <li class="socials__social">
+                <a class="socials__link socials__link--instagram socials__link--color" href="#inst">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="socials__social">
+                <a class="socials__link socials__link--prodoctorov" href="#pro">
+                  <span class="visually-hidden">Продокторов</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="team__item">
+            <img class="team__image" src="images/pasternak.png" width="335" height="250" alt="Доктор Сангов.">
+            <h3 class="team__subtitle"><span class="title title--size-small title--color">Пастернак</span>Ксения Владимировна </h3>
+            <p class="team__text">Врач стоматолог-терапевт
+              микроскопист, ортопед<br><br>Ксения Владимировна-специализируется на лечении кариеса,художественной реставрации жевательной и центральной группы зубов, эндодонтическом лечении. Стоматологический прием проводит только под микроскопом,
+              в  период лечения ведется фотопротокол.</p>
+            <ul class="team__socials socials">
+              <li class="socials__social">
+                <a class="socials__link socials__link--instagram socials__link--color" href="#inst">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="socials__social">
+                <a class="socials__link socials__link--prodoctorov" href="#pro">
+                  <span class="visually-hidden">Продокторов</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="team__item">
+            <img class="team__image" src="images/masrurov.png" width="335" height="250" alt="Доктор Сангов.">
+            <h3 class="team__subtitle"><span class="title title--size-small title--color">Масруров</span>Шахриер Гафурович</h3>
+            <p class="team__text">Врач стоматолог общей практики<br><br>Специализируется на составлении индивидуального комплексного плана лечения, лечении кариеса и его осложнений, профессиональная чистка зубов. Делает реставрации жевательной группы зубов. Удаление зубов.</p>
+            <ul class="team__socials socials">
+              <li class="socials__social">
+                <a class="socials__link socials__link--instagram socials__link--color" href="#inst">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="socials__social">
+                <a class="socials__link socials__link--prodoctorov" href="#pro">
+                  <span class="visually-hidden">Продокторов</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
       </div>
     </section>
 
     <section class="map">
       <div class="map__container container">
         <h2 class="visually-hidden">Карта</h2>
-        <iframe class="map__frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa80510c64053d66c050d8774e4cee13323b1f6e645742141a2ca7f4ef9774bcb&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
+        <iframe class="map__frame"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa80510c64053d66c050d8774e4cee13323b1f6e645742141a2ca7f4ef9774bcb&amp;source=constructor"
+          width="100%" height="300" frameborder="0"></iframe>
       </div>
     </section>
 

@@ -25,6 +25,10 @@
     background-image: url("../../icons/mail.svg");
   }
 
+  &--prodoctorov {
+    background-image: url("../../icons/prodoctorov.svg");
+  }
+
   &--color.socials__link--whatsapp {
     background-image: url("../../icons/whatsapp-white.svg");
   }
@@ -35,5 +39,9 @@
 
   &--color.socials__link--mail {
     background-image: url("../../icons/mail-white.svg");
+  }
+
+  &--color.socials__link--prodoctorov {
+    background-image: url("../../icons/prodoctorov-white.svg");
   }
 }

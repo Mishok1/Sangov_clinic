@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Clinic</title>
+  <title>Главная</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
@@ -61,22 +61,22 @@
         <div class="header__menu-wrapper menu-wrapper">
           <ul class="menu-wrapper__list menu">
             <li class="menu__item">
-              <a class="menu__link" href="#">Услуги</a>
+              <a class="menu__link" href="/services.html">Услуги</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Цены</a>
+              <a class="menu__link" href="/prices.html">Цены</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Наши работы</a>
+              <a class="menu__link" href="/our-works.html">Наши работы</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Врачи</a>
+              <a class="menu__link" href="/our-doctors.html">Врачи</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">О нас</a>
+              <a class="menu__link" href="/about.html">О нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Контакты</a>
+              <a class="menu__link" href="/contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
@@ -100,22 +100,22 @@
       <div class="header__mobile mobile">
         <ul class="mobile__menu menu">
           <li class="menu__item">
-            <a class="menu__link" href="#">Услуги</a>
+            <a class="menu__link" href="/services.html">Услуги</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Цены</a>
+            <a class="menu__link" href="/prices.html">Цены</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Наши работы</a>
+            <a class="menu__link" href="/our-works.html">Наши работы</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Врачи</a>
+            <a class="menu__link" href="/our-doctors.html">Врачи</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">О нас</a>
+            <a class="menu__link" href="/about.html">О нас</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="#">Контакты</a>
+            <a class="menu__link" href="/contacts.html">Контакты</a>
           </li>
         </ul>
         <address class="mobile__address address">
@@ -348,7 +348,7 @@
               <span>Составление плана лечения с КТ</span>
             </p>
           </li>
-          <li>
+          <li class="services__item">
             <img class="services__image" src="images/doctor-working.png" width="335" height="300"
               alt="Доктор работает.">
           </li>
@@ -472,17 +472,17 @@
     <section class="promo">
       <div class="promo__container container">
         <div class="promo__wrapper">
-          <h2 class="promo__title title title--size-small">Лучшая чистка зубов в Новосибирске</h2>
-          <p class="promo__text">В нашей клинике в Новосибирске предлагается лучшая чистка зубов. Мы используем
-            современные технологии и индивидуальный подход, чтобы обеспечить глубокое очищение, удаление зубного камня и
-            налета, улучшение здоровья десен и свежесть дыхания. Доверьтесь нашим профессионалам для достижения
-            идеальной улыбки!</p>
+          <h2 class="promo__title title title--size-small">Мы работаем с микроскопом!</h2>
+          <p class="promo__text">Использование стоматологического микроскопа позволяет нам проводить
+            лечение с высокой точностью. Благодаря увеличению мы можем лучше видеть
+            мельчайшие детали, что обеспечивает более эффективное и безопасное
+            лечение для наших пациентов.</p>
           <button class="promo__button button button--primary">Записаться</button>
         </div>
         <picture class="promo__picture">
-          <source media="(min-width: 1440px)" type="image/png" srcset="images/girl-cleaning.png" width="582"
+          <source media="(min-width: 1440px)" type="image/png" srcset="images/doctor-with-micro-desktop.png" width="582"
             height="358">
-          <img class="promo__image" src="images/girl-cleaning-small.png" width="335" height="250" alt="Чистка зубов.">
+          <img class="promo__image" src="images/doctor-with-micro.jpg" width="335" height="250" alt="Чистка зубов.">
         </picture>
       </div>
     </section>
@@ -620,24 +620,76 @@
       </div>
     </section>
 
+
     <section class="team">
       <div class="team__container container">
         <h2 class="team__title title title--color">Наши врачи</h2>
 
-        <!-- slider/ list slider
+        <!-- slider/ list slider -->
+         <!-- it's one slide -->
         <ul class="team__list">
           <li class="team__item">
             <img class="team__image" src="images/doctor-sangov.png" width="335" height="250" alt="Доктор Сангов.">
-            <h3 class="team__subtitle"><span class="title title--size-small title--color">Сангов</span><br>Абдулло Мамашарифович</h3>
-            <p class="team__text">Главный врач стоматолог, хирург-имплантолог, ортопед, терапевт<br><br>Ксения Владимировна-специализируется на лечении кариеса,художественной реставрации жевательной и центральной группы зубов, эндодонтическом лечении. Стоматологический прием проводит только под микроскопом,
+            <h3 class="team__subtitle"><span class="title title--size-small title--color">Сангов</span>Абдулло
+              Мамашарифович</h3>
+            <p class="team__text">Главный врач стоматолог, хирург-имплантолог, ортопед, терапевт<br><br>Ксения
+              Владимировна-специализируется на лечении кариеса,художественной реставрации жевательной и центральной
+              группы зубов, эндодонтическом лечении. Стоматологический прием проводит только под микроскопом,
+              в период лечения ведется фотопротокол.</p>
+            <ul class="team__socials socials">
+              <li class="socials__social">
+                <a class="socials__link socials__link--instagram socials__link--color" href="#inst">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="socials__social">
+                <a class="socials__link socials__link--prodoctorov" href="#pro">
+                  <span class="visually-hidden">Продокторов</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="team__item">
+            <img class="team__image" src="images/pasternak.png" width="335" height="250" alt="Доктор Сангов.">
+            <h3 class="team__subtitle"><span class="title title--size-small title--color">Пастернак</span>Ксения Владимировна </h3>
+            <p class="team__text">Врач стоматолог-терапевт
+              микроскопист, ортопед<br><br>Ксения Владимировна-специализируется на лечении кариеса,художественной реставрации жевательной и центральной группы зубов, эндодонтическом лечении. Стоматологический прием проводит только под микроскопом,
               в  период лечения ведется фотопротокол.</p>
-              <a class="team__link" href="instagram"></a>
-              <a class="team__link" href="noname"></a>
+            <ul class="team__socials socials">
+              <li class="socials__social">
+                <a class="socials__link socials__link--instagram socials__link--color" href="#inst">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="socials__social">
+                <a class="socials__link socials__link--prodoctorov" href="#pro">
+                  <span class="visually-hidden">Продокторов</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="team__item">
+            <img class="team__image" src="images/masrurov.png" width="335" height="250" alt="Доктор Сангов.">
+            <h3 class="team__subtitle"><span class="title title--size-small title--color">Масруров</span>Шахриер Гафурович</h3>
+            <p class="team__text">Врач стоматолог общей практики<br><br>Специализируется на составлении индивидуального комплексного плана лечения, лечении кариеса и его осложнений, профессиональная чистка зубов. Делает реставрации жевательной группы зубов. Удаление зубов.</p>
+            <ul class="team__socials socials">
+              <li class="socials__social">
+                <a class="socials__link socials__link--instagram socials__link--color" href="#inst">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="socials__social">
+                <a class="socials__link socials__link--prodoctorov" href="#pro">
+                  <span class="visually-hidden">Продокторов</span>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
-        -->
+
       </div>
     </section>
+
 
     <section class="promo">
       <div class="promo__container container">

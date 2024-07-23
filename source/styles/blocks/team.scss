@@ -4,9 +4,105 @@
   margin: 0 0 40px;
   padding: 24px 0;
   background-color: #0347ae;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 18px;
 
   @media (min-width: variables.$desktop-width) {
     margin: 0 0 48px;
     padding: 32px 0;
   }
+
+  &--background-color {
+    background-color: #ffffff;
+    color: #1A1919;
+  }
+}
+
+.team__title {
+  margin: 0 0 24px;
+}
+
+.team__slider {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  @media (min-width: variables.$desktop-width) {
+    column-gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.team__item {
+  @media (min-width: variables.$desktop-width) {
+    width: 31.65%;
+  }
+}
+
+.team__image {
+  border-radius: 16px;
+  object-fit: cover;
+  margin: 0 0 16px;
+  width: 100%;
+  height: 400px;
+  object-position: top;
+}
+
+.team__subtitle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 0 0 16px;
+
+  & span {
+    color: inherit;
+  }
+}
+
+.team__text {
+  margin: 0 0 16px;
+}
+
+.team__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin: 16px 0 0;
+
+  @media (min-width: variables.$desktop-width) {
+    flex-direction: row;
+    column-gap: 16px;
+  }
+}
+
+.team__button {
+  padding: 8px;
+  flex-grow: 1;
+}
+
+.team__button-second {
+  font-family: "Manrope-500", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  background-color: inherit;
+  border: 1px solid #0347AE;
+  border-radius: 16px;
+  padding: 8px;
+  color: #0347AE;
+  flex-grow: 1;
 }

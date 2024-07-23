@@ -36,7 +36,8 @@
   column-gap: 36px;
 
   @media (min-width: variables.$desktop-width) {
-    width: 378px;
+    // width: 378px;
+    width: 100%;
   }
 }
 

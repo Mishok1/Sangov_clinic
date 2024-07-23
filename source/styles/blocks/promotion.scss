@@ -68,6 +68,10 @@
   border-radius: 32px;
   margin-bottom: 24px;
   width: 100%;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
 }
 
 .promotion__offer {
@@ -124,6 +128,7 @@
   font-weight: 600;
   line-height: 28px;
   margin: 0 0 24px;
+  color: inherit;
 }
 
 .promotion__ads-price {

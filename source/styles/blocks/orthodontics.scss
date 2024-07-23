@@ -1,0 +1,212 @@
+@use '../common/variables.scss';
+
+.orthodontics {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.orthodontics__list {
+  position: relative;
+
+  &--right-background {
+    &::after {
+      content: "";
+      position: absolute;
+      background: url('../../images/orthodontics-background.png') no-repeat center;
+      background-position: top;
+      background-size: cover;
+      display: block;
+      width: calc(50% + 20px);
+      right: -20px;
+      min-height: 423px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: -1;
+
+      @media (min-width: variables.$desktop-width) {
+        background-image: url('../../images/orthodontics-background-desktop.png');
+        width: 43%;
+        height: 612px;
+        top: -20px;
+        transform: none;
+        right: -123px;
+      }
+    }
+  }
+
+  &--left-background {
+    &::after {
+      content: "";
+      position: absolute;
+      background: url('../../images/left-background.png') no-repeat center;
+      background-position: top;
+      background-size: cover;
+      width: calc(100% + 40px);
+      left: -20px;
+      min-height: 612px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: -1;
+
+      @media (min-width: variables.$desktop-width) {
+        background-image: url('../../images/left-background-desktop.png');
+        width: 43%;
+        top: -20px;
+        transform: none;
+        left: -123px;
+      }
+    }
+  }
+
+  &--center-background {
+    &::after {
+      content: "";
+      position: absolute;
+      background: url('../../images/center-background.png') no-repeat center;
+      background-position: top;
+      background-size: cover;
+      display: block;
+      width: calc(50% + 20px);
+      right: -20px;
+      height: 713px;
+      top: 65%;
+      transform: translateY(-50%);
+      z-index: -1;
+
+      @media (min-width: variables.$desktop-width) {
+        background-image: url('../../images/center-background-desktop.png');
+        width: 43%;
+        height: 612px;
+        top: 165px;
+        transform: none;
+        right: 121px;
+      }
+    }
+  }
+
+  &--middle-background {
+    &::after {
+      content: "";
+      position: absolute;
+      background: url('../../images/middle-background.png') no-repeat center;
+      background-position: top;
+      background-size: cover;
+      width: calc(100% + 40px);
+      left: -20px;
+      min-height: 275px;
+      top: 11%;
+      transform: translateY(-50%);
+      z-index: -1;
+
+      @media (min-width: variables.$desktop-width) {
+        background-image: url('../../images/middle-background-desktop.png');
+        width: 38%;
+        height: 275px;
+        top: -200px;
+        transform: none;
+        left: auto;
+        right: -123px;
+      }
+    }
+  }
+
+  &--left-background-bottom {
+    &::after {
+      background-image: url('../../images/bottom-background.png');
+
+      @media (min-width: variables.$desktop-width) {
+        background-image: url('../../images/bottom-background-desktop.png');
+        width: 29%;
+        height: 640px;
+        top: auto;
+        transform: none;
+        left: -123px;
+        bottom: 24px;
+      }
+    }
+  }
+
+}
+
+.orthodontics__title {
+  margin: 0 0 24px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 32px;
+  }
+}
+
+.orthodontics__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.orthodontics__item {
+  padding: 16px 24px;
+  border-radius: 16px;
+  box-shadow: 0 2px 9px 1px #0000001A;
+  background-color: #ffffff;
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &--image {
+    &:last-child {
+      padding: 0;
+    }
+  }
+
+  &--big {
+    @media (min-width: variables.$desktop-width) {
+      grid-column: 2 / 4;
+    }
+  }
+
+  &--small {
+    @media (min-width: variables.$desktop-width) {
+      grid-column: 3 / 4;
+    }
+  }
+}
+
+.orthodontics__subtitle {
+  margin: 0;
+
+  &::after {
+    content: "";
+    background-color: #1A1919;
+    height: 1px;
+    width: 100%;
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+.orthodontics__description {
+  margin: 0 0 24px;
+}
+
+.orthodontics__button {
+  width: 276px;
+  margin-top: auto;
+}
+
+.orthodontics__image {
+  object-fit: cover;
+  border-radius: 16px;
+  width: 100%;
+}

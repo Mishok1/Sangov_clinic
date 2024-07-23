@@ -1,0 +1,79 @@
+@use '../common/variables.scss';
+
+
+.questions__title {
+  margin: 0 0 12px;
+}
+
+.questions__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url('../../images/background-questions.png') no-repeat center;
+    background-position: top;
+    width: calc(100% - 12px);
+    height: calc(100% + 24px);
+    top: -12px;
+    left: 32px;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    border-radius: 16px;
+
+    @media (min-width: variables.$desktop-width) {
+      width: 60%;
+      left: auto;
+      height: calc(100% + 128px);
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background-image: url('../../images/background-questions-desktop.png');
+    }
+  }
+}
+
+.questions__item {
+  padding: 16px 14px;
+  box-shadow: 0 2px 9px 1px #0000001A;
+  border: 1px solid #0347AE;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+
+  @media (min-width: variables.$desktop-width) {
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      content: "";
+      background: url('../../icons/chevron-down.svg') no-repeat center;
+      width: 32px;
+      height: 32px;
+    }
+
+    &--open {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.questions__text {
+  margin: 0;
+
+  @media (min-width: variables.$desktop-width) {
+    font-family: "Manrope-600", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+}

@@ -15,7 +15,7 @@
 
   &--background-color {
     background-color: #ffffff;
-    color: #1A1919;
+    color: #1a1919;
   }
 }
 
@@ -39,8 +39,15 @@
 
   @media (min-width: variables.$desktop-width) {
     column-gap: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+  }
+
+  &--with-button .team__item {
+    @media (min-width: variables.$desktop-width) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -77,6 +84,10 @@
   margin: 0 0 16px;
 }
 
+.team__socials {
+  margin: 0 0 16px;
+}
+
 .team__wrapper {
   display: flex;
   flex-direction: column;
@@ -86,6 +97,7 @@
   @media (min-width: variables.$desktop-width) {
     flex-direction: row;
     column-gap: 16px;
+    margin-top: auto;
   }
 }
 
@@ -100,9 +112,9 @@
   font-weight: 500;
   line-height: 22px;
   background-color: inherit;
-  border: 1px solid #0347AE;
+  border: 1px solid #0347ae;
   border-radius: 16px;
   padding: 8px;
-  color: #0347AE;
+  color: #0347ae;
   flex-grow: 1;
 }

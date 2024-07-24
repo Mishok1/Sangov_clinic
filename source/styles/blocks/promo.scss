@@ -3,6 +3,10 @@
 .promo {
   @media (min-width: variables.$desktop-width) {
     margin: 0 0 48px;
+    height: 358px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -10,18 +14,19 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
 
 
   @media (min-width: variables.$desktop-width) {
     flex-direction: row;
     display: flex;
-    height: calc(358px + 48px + 48px);
+    // height: calc(358px + 48px + 48px);
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    padding: 0 123px;
   }
 }
-
 
 .promo__wrapper {
   padding: 24px 16px;
@@ -53,7 +58,6 @@
 .promo__picture {
   position: relative;
   top: -76px;
-  z-index: -1;
   display: flex;
   justify-content: center;
   z-index: -1;
@@ -74,8 +78,6 @@
     @media (min-width: variables.$desktop-width) {
       order: 0;
       top: 50%;
-      // left: -104px;
-      // flex-shrink: 0;
     }
   }
 }

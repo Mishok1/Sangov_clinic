@@ -1,4 +1,5 @@
-@use '../common/variables.scss';
+/* eslint-disable max-nesting-depth */
+@use "../common/variables.scss";
 
 .orthodontics {
   margin: 0 0 40px;
@@ -10,12 +11,22 @@
 
 .orthodontics__list {
   position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
   &--right-background {
     &::after {
       content: "";
       position: absolute;
-      background: url('../../images/orthodontics-background.png') no-repeat center;
+      background: url("../../images/orthodontics-background.png") no-repeat center;
       background-position: top;
       background-size: cover;
       display: block;
@@ -27,7 +38,7 @@
       z-index: -1;
 
       @media (min-width: variables.$desktop-width) {
-        background-image: url('../../images/orthodontics-background-desktop.png');
+        background-image: url("../../images/orthodontics-background-desktop.png");
         width: 43%;
         height: 612px;
         top: -20px;
@@ -41,7 +52,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url('../../images/left-background.png') no-repeat center;
+      background: url("../../images/left-background.png") no-repeat center;
       background-position: top;
       background-size: cover;
       width: calc(100% + 40px);
@@ -52,7 +63,7 @@
       z-index: -1;
 
       @media (min-width: variables.$desktop-width) {
-        background-image: url('../../images/left-background-desktop.png');
+        background-image: url("../../images/left-background-desktop.png");
         width: 43%;
         top: -20px;
         transform: none;
@@ -65,7 +76,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url('../../images/center-background.png') no-repeat center;
+      background: url("../../images/center-background.png") no-repeat center;
       background-position: top;
       background-size: cover;
       display: block;
@@ -77,7 +88,7 @@
       z-index: -1;
 
       @media (min-width: variables.$desktop-width) {
-        background-image: url('../../images/center-background-desktop.png');
+        background-image: url("../../images/center-background-desktop.png");
         width: 43%;
         height: 612px;
         top: 165px;
@@ -91,7 +102,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url('../../images/middle-background.png') no-repeat center;
+      background: url("../../images/middle-background.png") no-repeat center;
       background-position: top;
       background-size: cover;
       width: calc(100% + 40px);
@@ -102,7 +113,7 @@
       z-index: -1;
 
       @media (min-width: variables.$desktop-width) {
-        background-image: url('../../images/middle-background-desktop.png');
+        background-image: url("../../images/middle-background-desktop.png");
         width: 38%;
         height: 275px;
         top: -200px;
@@ -115,10 +126,10 @@
 
   &--left-background-bottom {
     &::after {
-      background-image: url('../../images/bottom-background.png');
+      background-image: url("../../images/bottom-background.png");
 
       @media (min-width: variables.$desktop-width) {
-        background-image: url('../../images/bottom-background-desktop.png');
+        background-image: url("../../images/bottom-background-desktop.png");
         width: 29%;
         height: 640px;
         top: auto;
@@ -128,7 +139,6 @@
       }
     }
   }
-
 }
 
 .orthodontics__title {
@@ -139,23 +149,10 @@
   }
 }
 
-.orthodontics__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  row-gap: 16px;
-
-  @media (min-width: variables.$desktop-width) {
-    gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
 .orthodontics__item {
   padding: 16px 24px;
   border-radius: 16px;
-  box-shadow: 0 2px 9px 1px #0000001A;
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
 
   @media (min-width: variables.$desktop-width) {
@@ -188,7 +185,7 @@
 
   &::after {
     content: "";
-    background-color: #1A1919;
+    background-color: #1a1919;
     height: 1px;
     width: 100%;
     display: block;

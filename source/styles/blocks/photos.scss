@@ -1,4 +1,4 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .photos {
   margin: 0 0 40px;
@@ -53,7 +53,4 @@
   border-radius: 16px;
   object-fit: cover;
   width: 100%;
-
-
-  @media (min-width: variables.$desktop-width) {}
 }

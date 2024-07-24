@@ -4,11 +4,13 @@
   position: absolute;
   display: none;
   flex-direction: column;
-  background-color: inherit;
+  background-color: rgba(255, 255, 255, 0.95);
   top: calc(0px + 74px);
   padding: 16px 20px 40px;
   left: 0;
   width: 100%;
+  z-index: 1;
+
 
   &--open {
     display: flex;

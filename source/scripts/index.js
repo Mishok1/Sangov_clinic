@@ -1,6 +1,3 @@
-// import Glide, { Controls, Breakpoints } from '@glidejs/glide/dist/glide.modular.esm';
-
-
 //mobile-button
 
 const mobileButton = document.querySelector('.header__mobile-button');
@@ -15,44 +12,73 @@ mobileButton.addEventListener('click', (evt) => {
 });
 
 
-//slider
+// modal
 
-// new Glide('.glide', {
-//   perView: 1
-// }).mount({ Controls, Breakpoints });
+const modalButtons = document.querySelectorAll('#modal-button');
+const modal = document.querySelector('#modal');
+const requestWrapper = document.querySelector('.request--modal .request__wrapper');
+// const submitButton = document.querySelector('#modal-submit-button');
+
+modalButtons.forEach((button) => {
+  button.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    modal.classList.toggle('request--open');
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        modal.classList.toggle('request--open');
+      }
+    }, { once: true });
+
+  });
+});
+
+modal.addEventListener('click', (e) => {
+  const withinBoundaries = e.composedPath().includes(requestWrapper);
+  if (!withinBoundaries) {
+    modal.classList.toggle('request--open');
+  }
+});
 
 
-{/* <div class="glide">
-<div data-glide-el="track" class="glide__track">
-  <ul class="glide__slides">
-    <li class="glide__slide">
-      <img class="rating__image" src="images/google.png" width="180" height="60" alt="Google.">
-    </li>
-    <li class="glide__slide">
-      <img class="rating__image" src="images/yandex.png" width="180" height="60" alt="Google.">
-    </li>
-    <li class="glide__slide">
-      <img class="rating__image" src="images/2gis.png" width="180" height="60" alt="Google.">
-    </li>
-    <li class="glide__slide">
-      <img class="rating__image" src="images/zoon.png" width="180" height="60" alt="Google.">
-    </li>
-    <li class="glide__slide">
-      <img class="rating__image" src="images/prodoctorov.png" width="180" height="60" alt="Google.">
-    </li>
-  </ul>
-  <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
-  </div>
-</div>
-<div class="glide__bullets" data-glide-el="controls[nav]">
-  <button class="glide__bullet" data-glide-dir="=0"></button>
-  <button class="glide__bullet" data-glide-dir="=1"></button>
-  <button class="glide__bullet" data-glide-dir="=2"></button>
-</div>
-</div>
-<div data-glide-el="controls">
-<button data-glide-dir="<<">Start</button>
-<button data-glide-dir=">>">End</button>
-</div> */}
+// closing modal when submit (not testing)
+
+// submitButton.addEventListener('submit', () => {
+//   modal.classList.toggle('request--open');
+// });
+
+
+// modal-watsapp
+
+const modalButtonsWhatsapp = document.querySelectorAll('#modal-button-whatsapp');
+const modalWhatsapp = document.querySelector('#modal-whatsapp');
+const requestWrapperWhatsapp = document.querySelector('.request--whatsapp .request__wrapper');
+// const submitButtonWhatsapp = document.querySelector('#modal-whatsapp-submit-button');
+
+modalButtonsWhatsapp.forEach((button) => {
+  button.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    modalWhatsapp.classList.toggle('request--open');
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        modalWhatsapp.classList.toggle('request--open');
+      }
+    }, { once: true });
+
+  });
+});
+
+modalWhatsapp.addEventListener('click', (ev) => {
+  const withinBoundaries = ev.composedPath().includes(requestWrapperWhatsapp);
+  if (!withinBoundaries) {
+    modalWhatsapp.classList.toggle('request--open');
+  }
+});
+
+
+// closing modal when submit (not testing)
+
+// submitButtonWhatsapp.addEventListener('submit', () => {
+//   modal.classList.toggle('request--open');
+// });

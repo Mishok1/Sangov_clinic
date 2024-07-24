@@ -35,12 +35,12 @@
 
         <ul class="address__socials socials">
           <li class="socials__social ">
-            <a class="socials__link socials__link--whatsapp" href="#wt">
+            <a class="socials__link socials__link--whatsapp" href="https://wa.me/+79639456363">
               <span class="visually-hidden">What's App</span>
             </a>
           </li>
           <li class="socials__social">
-            <a class="socials__link socials__link--instagram" href="#inst">
+            <a class="socials__link socials__link--instagram" href="https://www.instagram.com/sangov_clinic">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
@@ -87,7 +87,8 @@
               <input class="menu-wrapper__input" type="text" name="search" placeholder="Поиск">
             </label>
           </form>
-          <button class="menu-wrapper__button button button--primary" type="button">Записаться</button>
+          <button id="modal-button" class="menu-wrapper__button button button--primary"
+            type="button">Записаться</button>
         </div>
 
         <button class="header__mobile-button button" type="button">
@@ -136,12 +137,12 @@
 
           <ul class="socials">
             <li class="socials__social ">
-              <a class="socials__link socials__link--whatsapp" href="#wt">
+              <a class="socials__link socials__link--whatsapp" href="https://wa.me/+79639456363">
                 <span class="visually-hidden">What's App</span>
               </a>
             </li>
             <li class="socials__social">
-              <a class="socials__link socials__link--instagram" href="#inst">
+              <a class="socials__link socials__link--instagram" href="https://www.instagram.com/sangov_clinic">
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
@@ -154,7 +155,7 @@
         </address>
 
         <div class="mobile__search">
-          <button class="mobile__button button button--primary" type="button">Записаться</button>
+          <button id="modal-button" class="mobile__button button button--primary" type="button">Записаться</button>
           <form class="mobile__form" action="#" method="post">
             <label>
               <input class="mobile__input" type="text" name="search" placeholder="Поиск">
@@ -174,10 +175,15 @@
       <div class="hero__container container">
         <h2 class="hero__title title">Стоматология 5 звезд</h2>
         <p class="hero__description">Обслуживание пациентов всех возрастов</p>
-        <!-- slider -->
+        <picture class="hero__picture">
+          <source media="(min-width: 1440px)" type="image/png" srcset="images/hero-desktop.png" width="1194"
+            height="500">
+          <img class="hero__image" src="images/hero.png" width="335" height="250" alt="Team.">
+        </picture>
         <div class="hero__buttons-wrapper">
-          <button class="hero__button button button--primary" type="button">Записаться</button>
-          <a class="hero__link" href="#wa">Написать в WhatsApp</a>
+          <button id="modal-button" class="hero__button button button--primary" type="button">Записаться</button>
+          <button id="modal-button-whatsapp" class="hero__button button button--primary button--whatsapp"
+            type="button">Написать в WhatsApp</a>
         </div>
       </div>
     </section>
@@ -192,7 +198,7 @@
             <img class="rating__image" src="images/google.png" width="180" height="60" alt="Google.">
             <p class="rating__text">Рейтинг</p>
             <p class="rating__score">5.0/5</p>
-            <img class="rating__stars" src="images/stars.png" alt="4 stars.">
+            <img class="rating__stars" src="images/stars.png" width="10" height="10" alt="4 stars.">
             <p class="rating__text">193 отзывов</p>
           </li>
         </ul>
@@ -206,19 +212,22 @@
           <li class="most-popular__item">
             <h3 class="most-popular__subtitle title title--size-small">Чистка зубов</h3>
             <p class="most-popular__price">3500₽</p>
-            <button class="most-popular__button button button--primary">Записаться</button>
+            <button id="modal-button" class="most-popular__button button button--primary"
+              type="button">Записаться</button>
             <img class="most-popular__image" src="images/cleaning.svg" width="96" height="96" alt="Чистка.">
           </li>
           <li class="most-popular__item">
             <h3 class="most-popular__subtitle title title--size-small">Имплант</h3>
             <p class="most-popular__price">от 20000₽</p>
-            <button class="most-popular__button button button--primary">Записаться</button>
+            <button id="modal-button" class="most-popular__button button button--primary"
+              type="button">Записаться</button>
             <img class="most-popular__image" src="images/implanting.svg" width="96" height="96" alt="Имплант.">
           </li>
           <li class="most-popular__item">
             <h3 class="most-popular__subtitle title title--size-small">Удаление</h3>
             <p class="most-popular__price">от 1500₽</p>
-            <button class="most-popular__button button button--primary">Записаться</button>
+            <button id="modal-button" class="most-popular__button button button--primary"
+              type="button">Записаться</button>
             <img class="most-popular__image" src="images/deleting.svg" width="96" height="96" alt="Удаление.">
           </li>
         </ul>
@@ -246,7 +255,7 @@
             современные технологии и индивидуальный подход, чтобы обеспечить глубокое очищение, удаление зубного камня и
             налета, улучшение здоровья десен и свежесть дыхания. Доверьтесь нашим профессионалам для достижения
             идеальной улыбки!</p>
-          <button class="promo__button button button--primary">Записаться</button>
+          <button id="modal-button" class="promo__button button button--primary">Записаться</button>
         </div>
         <picture class="promo__picture">
           <source media="(min-width: 1440px)" type="image/png" srcset="images/girl-cleaning.png" width="582"
@@ -321,7 +330,7 @@
             <h3 class="services__subtitle title title--size-small">Имплантация</h3>
             <p class="services__text">
               <span>Установка импланта</span>
-              <span>Синус-лифтинг открытый/закрытый </span>
+              <span>Синус-лифтинг открытый/закрытый</span>
               <span>Пластика десны</span>
               <span>Пластика десны</span>
               <span>Удаление импланта</span>
@@ -391,15 +400,15 @@
           <span>БЕСПЛАТНО</span>
         </p>
         <div class="promotion__wrapper">
-          <button class="promotion__button button button--primary">Записаться</button>
+          <button id="modal-button" class="promotion__button button button--primary">Записаться</button>
           <ul class="promotion__socials socials">
             <li class="socials__social">
-              <a class="socials__link socials__link--whatsapp" href="#wt">
+              <a class="socials__link socials__link--whatsapp" href="https://wa.me/+79639456363">
                 <span class="visually-hidden">What's App</span>
               </a>
             </li>
             <li class="socials__social">
-              <a class="socials__link socials__link--instagram" href="#inst">
+              <a class="socials__link socials__link--instagram" href="https://www.instagram.com/sangov_clinic">
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
@@ -477,7 +486,7 @@
             лечение с высокой точностью. Благодаря увеличению мы можем лучше видеть
             мельчайшие детали, что обеспечивает более эффективное и безопасное
             лечение для наших пациентов.</p>
-          <button class="promo__button button button--primary">Записаться</button>
+          <button id="modal-button" class="promo__button button button--primary" type="button">Записаться</button>
         </div>
         <picture class="promo__picture">
           <source media="(min-width: 1440px)" type="image/png" srcset="images/doctor-with-micro-desktop.png" width="582"
@@ -491,11 +500,13 @@
       <div class="follow__container container">
         <h2 class="follow__title title">Следите за нами в Instagram!</h2>
         <div class="follow__wrapper">
-          <a class="follow__link" href="www.instagram.com" target="_blank">
+          <a class="follow__link" href="https://www.instagram.com/sangov_clinic" target="_blank"
+            rel="noopener noreferrer">
             <img class="follow__logo" src="images/clinic-logo.png" width="67" height="64" alt="Clinic Logo.">
             <p class="follow__logo-text">sangov_clinic</p>
           </a>
-          <a class="follow__button button button--primary" href="www.instagram.com" target="_blank">Подписаться на
+          <a class="follow__button button button--primary" href="https://www.instagram.com/sangov_clinic"
+            target="_blank" rel="noopener noreferrer">Подписаться на
             нас</a>
         </div>
         <ul class="follow__list">
@@ -550,7 +561,7 @@
             Также, оказывая стоматологическую помощь, мы не забываем и о маленьких пациентах. Благодаря индивидуальному
             подходу, наши пациенты с первого визита чувствуют себя уверенно и комфортно.
           </p>
-          <button class="about__button button button--primary" type="button">Записаться</button>
+          <button id="modal-button" class="about__button button button--primary" type="button">Записаться</button>
         </div>
       </div>
     </section>
@@ -587,15 +598,15 @@
           2019г - специализация по ортопедической стоматологии
         </p>
         <div class="doctor__wrapper">
-          <button class="doctor__button button button--primary">Записаться</button>
+          <button id="modal-button" class="doctor__button button button--primary" type="button">Записаться</button>
           <ul class="doctor__socials socials">
             <li class="socials__social">
-              <a class="socials__link socials__link--whatsapp" href="#wt">
+              <a class="socials__link socials__link--whatsapp" href="https://wa.me/+79639456363">
                 <span class="visually-hidden">What's App</span>
               </a>
             </li>
             <li class="socials__social">
-              <a class="socials__link socials__link--instagram" href="#inst">
+              <a class="socials__link socials__link--instagram" href="https://www.instagram.com/sangov_clinic">
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
@@ -638,12 +649,14 @@
                   в период лечения ведется фотопротокол.</p>
                 <ul class="team__socials socials">
                   <li class="socials__social">
-                    <a class="socials__link socials__link--instagram socials__link--color" href="#inst">
+                    <a class="socials__link socials__link--instagram socials__link--color" target="_blank" rel="noopener noreferrer"
+                      href="https://www.instagram.com/dr.sangov/">
                       <span class="visually-hidden">Instagram</span>
                     </a>
                   </li>
                   <li class="socials__social">
-                    <a class="socials__link socials__link--prodoctorov socials__link--color" href="#pro">
+                    <a class="socials__link socials__link--prodoctorov socials__link--color" target="_blank" rel="noopener noreferrer"
+                      href="https://prodoctorov.ru/novosibirsk/vrach/693318-sangov/">
                       <span class="visually-hidden">Продокторов</span>
                     </a>
                   </li>
@@ -658,18 +671,6 @@
                   реставрации жевательной и центральной группы зубов, эндодонтическом лечении. Стоматологический прием
                   проводит только под микроскопом,
                   в период лечения ведется фотопротокол.</p>
-                <ul class="team__socials socials">
-                  <li class="socials__social">
-                    <a class="socials__link socials__link--instagram socials__link--color" href="#inst">
-                      <span class="visually-hidden">Instagram</span>
-                    </a>
-                  </li>
-                  <li class="socials__social">
-                    <a class="socials__link socials__link--prodoctorov socials__link--color" href="#pro">
-                      <span class="visually-hidden">Продокторов</span>
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="team__item">
                 <img class="team__image" src="images/masrurov.png" width="335" height="250" alt="Доктор Сангов.">
@@ -678,18 +679,6 @@
                 <p class="team__text">Врач стоматолог общей практики<br><br>Специализируется на составлении
                   индивидуального комплексного плана лечения, лечении кариеса и его осложнений, профессиональная чистка
                   зубов. Делает реставрации жевательной группы зубов. Удаление зубов.</p>
-                <ul class="team__socials socials">
-                  <li class="socials__social">
-                    <a class="socials__link socials__link--instagram socials__link--color" href="#inst">
-                      <span class="visually-hidden">Instagram</span>
-                    </a>
-                  </li>
-                  <li class="socials__social">
-                    <a class="socials__link socials__link--prodoctorov socials__link--color" href="#pro">
-                      <span class="visually-hidden">Продокторов</span>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
 
@@ -710,7 +699,7 @@
             <span class="promo__price">26 500 ₽</span>
             <span class="promo__old-price">35 000 ₽</span>
           </div>
-          <button class="promo__button button button--primary">Записаться</button>
+          <button id="modal-button" class="promo__button button button--primary" type="button">Записаться</button>
         </div>
         <picture class="promo__picture">
           <source media="(min-width: 1440px)" type="image/png" srcset="images/girl-cleaning.png" width="582"
@@ -787,8 +776,9 @@
           <img class="logo__image" src="images/clinic-logo.png" width="59" height="64" alt="Clinic Logo.">
           <p class="logo__description">Стоматологическая<br>клиника Сангова</p>
         </a>
-        <a class="footer__link" href="#wa">Написать в WhatsApp</a>
-        <button class="footer__button button button--primary" type="button">Записаться</button>
+        <button id="modal-button-whatsapp" class="footer__button button button--primary button--whatsapp"
+          type="button">Написать в WhatsApp</button>
+          <button id="modal-button" class="footer__button button button--primary" type="button">Записаться</button>
       </div>
       <address class="footer__address address">
         <ul class="address__list address__list--direction address__list--color">
@@ -812,12 +802,13 @@
 
         <ul class="address__socials socials">
           <li class="socials__social">
-            <a class="socials__link socials__link--color socials__link--whatsapp" href="#wt">
+            <a class="socials__link socials__link--color socials__link--whatsapp" href="https://wa.me/+79639456363">
               <span class="visually-hidden">What's App</span>
             </a>
           </li>
           <li class="socials__social">
-            <a class="socials__link socials__link--color socials__link--instagram" href="#inst">
+            <a class="socials__link socials__link--color socials__link--instagram"
+              href="https://www.instagram.com/sangov_clinic">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
@@ -857,6 +848,39 @@
       <img class="footer__image" src="images/cards.png" width="275" height="169" alt="Способы оплаты.">
     </div>
   </footer>
+
+  <div id="modal" class="request request--modal"> <!-- request--open -->
+    <div class="request__wrapper container">
+      <h2 class="request__title title">Свяжитесь с нами</h2>
+      <form class="request__form" method="post" action="">
+        <label class="request__control">
+          <input class="request__input" type="text" name="name" placeholder="Имя">
+        </label>
+        <label class="request__control">
+          <input class="request__input" type="number" name="tel" placeholder="+7 999 999 99 99">
+        </label>
+        <button id="modal-submit-button" class="request__button button button--primary" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="modal-whatsapp" class="request request--whatsapp"> <!-- request--open -->
+    <div class="request__wrapper container">
+      <h2 class="request__title title">Свяжитесь с нами</h2>
+      <form class="request__form" method="post" action="#">
+        <label class="request__control">
+          <input class="request__input" type="text" name="name" placeholder="Имя">
+        </label>
+        <label class="request__control">
+          <input class="request__input" type="number" name="tel" placeholder="+7 999 999 99 99">
+        </label>
+        <button id="modal-whatsapp-submit-button"
+          class="request__button request__button--whatsapp button button--primary" type="submit">Получить
+          предложение в вотсап</button>
+      </form>
+    </div>
+  </div>
+
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 
 .questions__title {
@@ -16,7 +16,7 @@
 
   &::after {
     content: "";
-    background: url('../../images/background-questions.png') no-repeat center;
+    background: url("../../images/background-questions.png") no-repeat center;
     background-position: top;
     width: calc(100% - 12px);
     height: calc(100% + 24px);
@@ -34,17 +34,17 @@
       top: 50%;
       transform: translateY(-50%);
       right: 0;
-      background-image: url('../../images/background-questions-desktop.png');
+      background-image: url("../../images/background-questions-desktop.png");
     }
   }
 }
 
 .questions__item {
   padding: 16px 14px;
-  box-shadow: 0 2px 9px 1px #0000001A;
-  border: 1px solid #0347AE;
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #0347ae;
   border-radius: 16px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   @media (min-width: variables.$desktop-width) {
     padding: 24px 32px;
@@ -54,7 +54,7 @@
 
     &::after {
       content: "";
-      background: url('../../icons/chevron-down.svg') no-repeat center;
+      background: url("../../icons/chevron-down.svg") no-repeat center;
       width: 32px;
       height: 32px;
     }

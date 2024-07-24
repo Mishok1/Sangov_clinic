@@ -1,0 +1,73 @@
+@use "../common/variables.scss";
+
+.request {
+  display: none;
+
+  &--open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.request__wrapper {
+  padding: 32px 16px;
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background-color: #ffffff;
+
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 456px;
+  }
+}
+
+.request__title {
+  margin: 0 0 24px;
+}
+
+.request__text {
+  margin: 0 0 24px;
+}
+
+.request__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.request__input {
+  padding: 12px 24px 10px;
+  border: 1px solid #0347ae;
+  border-radius: 16px;
+  width: 100%;
+  font-family: "Manrope-500", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  box-shadow: 0 2px 9px 1px #0000001A;
+
+  &::placeholder {
+    color: #333333;
+  }
+}
+
+.request__button {
+  margin: 8px 0 0;
+  height: 42px;
+
+  @media (min-width: variables.$desktop-width) {
+    height: 48px;
+  }
+
+  &--whatsapp {
+    background-color: #429209;
+  }
+}

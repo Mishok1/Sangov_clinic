@@ -82,6 +82,9 @@
 
   @media (min-width: variables.$desktop-width) {
     grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
   }
 }
 
@@ -92,6 +95,10 @@
   line-height: 40px;
   color: #0347ae;
   margin: 0 0 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
 }
 
 .promotion__offer-description {
@@ -187,6 +194,7 @@
 .promotion__button {
   width: 100%;
   margin-bottom: 16px;
+  height: 46px;
 
   @media (min-width: variables.$desktop-width) {
     margin: 0;

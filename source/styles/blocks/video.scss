@@ -1,4 +1,4 @@
-@use '../common/variables.scss';
+@use "../common/variables.scss";
 
 .video {
   margin: 0 0 40px;
@@ -20,7 +20,7 @@
   margin: 0 0 8px;
 }
 
-.video__button{
+.video__button {
   display: none;
 
   @media (min-width: variables.$desktop-width) {

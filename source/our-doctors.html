@@ -35,12 +35,12 @@
 
         <ul class="address__socials socials">
           <li class="socials__social ">
-            <a class="socials__link socials__link--whatsapp" href="#wt">
+            <a class="socials__link socials__link--whatsapp" href="https://wa.me/+79639456363">
               <span class="visually-hidden">What's App</span>
             </a>
           </li>
           <li class="socials__social">
-            <a class="socials__link socials__link--instagram" href="#inst">
+            <a class="socials__link socials__link--instagram" href="https://www.instagram.com/sangov_clinic">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
@@ -87,7 +87,8 @@
               <input class="menu-wrapper__input" type="text" name="search" placeholder="Поиск">
             </label>
           </form>
-          <button class="menu-wrapper__button button button--primary" type="button">Записаться</button>
+          <button id="modal-button" class="menu-wrapper__button button button--primary"
+            type="button">Записаться</button>
         </div>
 
         <button class="header__mobile-button button" type="button">
@@ -136,12 +137,12 @@
 
           <ul class="socials">
             <li class="socials__social ">
-              <a class="socials__link socials__link--whatsapp" href="#wt">
+              <a class="socials__link socials__link--whatsapp" href="https://wa.me/+79639456363">
                 <span class="visually-hidden">What's App</span>
               </a>
             </li>
             <li class="socials__social">
-              <a class="socials__link socials__link--instagram" href="#inst">
+              <a class="socials__link socials__link--instagram" href="https://www.instagram.com/sangov_clinic">
                 <span class="visually-hidden">Instagram</span>
               </a>
             </li>
@@ -154,7 +155,7 @@
         </address>
 
         <div class="mobile__search">
-          <button class="mobile__button button button--primary" type="button">Записаться</button>
+          <button id="modal-button" class="mobile__button button button--primary" type="button">Записаться</button>
           <form class="mobile__form" action="#" method="post">
             <label>
               <input class="mobile__input" type="text" name="search" placeholder="Поиск">
@@ -177,7 +178,7 @@
           <h2 class="promo__title title title--secondary-color">Наши работы</h2>
           <p class="promo__text">Ознакомьтесь с примерами наших успешно выполненных стоматологических процедур. Наши
             кейсы демонстрируют высокий уровень мастерства.</p>
-          <button class="promo__button button button--primary" type="button">Записаться</button>
+          <button id="modal-button" class="promo__button button button--primary" type="button">Записаться</button>
         </div>
         <picture class="promo__picture promo__picture--order">
           <source media="(min-width: 1440px)" type="image/png" srcset="images/doctor-with-desktop-desktop.png"
@@ -191,27 +192,31 @@
       <div class="team__container container">
         <h2 class="team__title title title--color">Наши врачи</h2>
 
-        <ul class="team__list">
+        <ul class="team__list team__list--with-button">
           <li class="team__item">
             <img class="team__image" src="images/sangov.png" width="335" height="250" alt="Доктор Сангов.">
             <h3 class="team__subtitle"><span class="title title--size-small">Сангов</span>Абдулло Мамашарифович</h3>
-            <p class="team__text">Главный врач стоматолог, хирург-имплантолог, ортопед, терапевт<br><br>хирург-стоматолог со стажем более 8 лет.
+            <p class="team__text">Главный врач стоматолог, хирург-имплантолог, ортопед,
+              терапевт<br><br>хирург-стоматолог со стажем более 8 лет.
               Специалист в реконструктивной хирургии
-              (костная пластика, синус-лифтинг,аугментация). Проводит операции по микрохирургической пластике дёсен. Работает только с применением оптики, микроскопа.</p>
+              (костная пластика, синус-лифтинг,аугментация). Проводит операции по микрохирургической пластике дёсен.
+              Работает только с применением оптики, микроскопа.</p>
             <ul class="team__socials socials">
               <li class="socials__social">
-                <a class="socials__link socials__link--instagram" href="#inst">
+                <a class="socials__link socials__link--instagram" target="_blank" rel="noopener noreferrer"
+                  href="https://www.instagram.com/dr.sangov/">
                   <span class="visually-hidden">Instagram</span>
                 </a>
               </li>
               <li class="socials__social">
-                <a class="socials__link socials__link--prodoctorov" href="#pro">
+                <a class="socials__link socials__link--prodoctorov" target="_blank" rel="noopener noreferrer"
+                  href="https://prodoctorov.ru/novosibirsk/vrach/693318-sangov/">
                   <span class="visually-hidden">Продокторов</span>
                 </a>
               </li>
             </ul>
             <div class="team__wrapper">
-              <button class="team__button button button--primary" type="button">Записаться</button>
+              <button id="modal-button" class="team__button button button--primary" type="button">Записаться</button>
               <button class="team__button-second button" type="button">Расписание</button>
             </div>
           </li>
@@ -219,22 +224,12 @@
             <img class="team__image" src="images/pasternak.png" width="335" height="250" alt="Доктор Сангов.">
             <h3 class="team__subtitle"><span class="title title--size-small">Пастернак</span>Ксения Владимировна</h3>
             <p class="team__text">Врач стоматолог-терапевт
-              микроскопист, ортопед<br><br>Ксения Владимировна-специализируется на лечении кариеса,художественной реставрации жевательной и центральной группы зубов, эндодонтическом лечении. Стоматологический прием проводит только под микроскопом,
-              в  период лечения ведется фотопротокол.</p>
-            <ul class="team__socials socials">
-              <li class="socials__social">
-                <a class="socials__link socials__link--instagram" href="#inst">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li class="socials__social">
-                <a class="socials__link socials__link--prodoctorov" href="#pro">
-                  <span class="visually-hidden">Продокторов</span>
-                </a>
-              </li>
-            </ul>
+              микроскопист, ортопед<br><br>Ксения Владимировна-специализируется на лечении кариеса,художественной
+              реставрации жевательной и центральной группы зубов, эндодонтическом лечении. Стоматологический прием
+              проводит только под микроскопом,
+              в период лечения ведется фотопротокол.</p>
             <div class="team__wrapper">
-              <button class="team__button button button--primary" type="button">Записаться</button>
+              <button id="modal-button" class="team__button button button--primary" type="button">Записаться</button>
               <button class="team__button-second button" type="button">Расписание</button>
             </div>
           </li>
@@ -245,20 +240,8 @@
             <p class="team__text">Врач стоматолог общей практики<br><br>Специализируется на составлении индивидуального
               комплексного плана лечения, лечении кариеса и его осложнений, профессиональная чистка зубов. Делает
               реставрации жевательной группы зубов. Удаление зубов.</p>
-            <ul class="team__socials socials">
-              <li class="socials__social">
-                <a class="socials__link socials__link--instagram" href="#inst">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li class="socials__social">
-                <a class="socials__link socials__link--prodoctorov" href="#pro">
-                  <span class="visually-hidden">Продокторов</span>
-                </a>
-              </li>
-            </ul>
             <div class="team__wrapper">
-              <button class="team__button button button--primary" type="button">Записаться</button>
+              <button id="modal-button" class="team__button button button--primary" type="button">Записаться</button>
               <button class="team__button-second button" type="button">Расписание</button>
             </div>
           </li>
@@ -266,20 +249,8 @@
             <img class="team__image" src="images/obisoda.png" width="335" height="250" alt="Доктор Сангов.">
             <h3 class="team__subtitle"><span class="title title--size-small">Обидзода</span>Мухаммад Амин</h3>
             <p class="team__text">Ассистент</p>
-            <ul class="team__socials socials">
-              <li class="socials__social">
-                <a class="socials__link socials__link--instagram" href="#inst">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li class="socials__social">
-                <a class="socials__link socials__link--prodoctorov" href="#pro">
-                  <span class="visually-hidden">Продокторов</span>
-                </a>
-              </li>
-            </ul>
             <div class="team__wrapper">
-              <button class="team__button button button--primary" type="button">Записаться</button>
+              <button id="modal-button" class="team__button button button--primary" type="button">Записаться</button>
               <button class="team__button-second button" type="button">Расписание</button>
             </div>
           </li>
@@ -287,20 +258,8 @@
             <img class="team__image" src="images/odinaeva.png" width="335" height="250" alt="Доктор Сангов.">
             <h3 class="team__subtitle"><span class="title title--size-small">Одинаева</span>Ганджина Хайевна</h3>
             <p class="team__text">Старшая медицинская сестра</p>
-            <ul class="team__socials socials">
-              <li class="socials__social">
-                <a class="socials__link socials__link--instagram" href="#inst">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li class="socials__social">
-                <a class="socials__link socials__link--prodoctorov" href="#pro">
-                  <span class="visually-hidden">Продокторов</span>
-                </a>
-              </li>
-            </ul>
             <div class="team__wrapper">
-              <button class="team__button button button--primary" type="button">Записаться</button>
+              <button id="modal-button" class="team__button button button--primary" type="button">Записаться</button>
               <button class="team__button-second button" type="button">Расписание</button>
             </div>
           </li>
@@ -308,20 +267,8 @@
             <img class="team__image" src="images/musinjan.png" width="335" height="250" alt="Доктор Сангов.">
             <h3 class="team__subtitle"><span class="title title--size-small">Мусинжанович</span>Юлчиев Нозим</h3>
             <p class="team__text">Ассистент</p>
-            <ul class="team__socials socials">
-              <li class="socials__social">
-                <a class="socials__link socials__link--instagram" href="#inst">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li class="socials__social">
-                <a class="socials__link socials__link--prodoctorov" href="#pro">
-                  <span class="visually-hidden">Продокторов</span>
-                </a>
-              </li>
-            </ul>
             <div class="team__wrapper">
-              <button class="team__button button button--primary" type="button">Записаться</button>
+              <button id="modal-button" class="team__button button button--primary" type="button">Записаться</button>
               <button class="team__button-second button" type="button">Расписание</button>
             </div>
           </li>
@@ -329,20 +276,8 @@
             <img class="team__image" src="images/suprotki.png" width="335" height="250" alt="Доктор Сангов.">
             <h3 class="team__subtitle"><span class="title title--size-small">Супротки</span>Ксения Константиновна</h3>
             <p class="team__text">Администратор</p>
-            <ul class="team__socials socials">
-              <li class="socials__social">
-                <a class="socials__link socials__link--instagram" href="#inst">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li class="socials__social">
-                <a class="socials__link socials__link--prodoctorov" href="#pro">
-                  <span class="visually-hidden">Продокторов</span>
-                </a>
-              </li>
-            </ul>
             <div class="team__wrapper">
-              <button class="team__button button button--primary" type="button">Записаться</button>
+              <button id="modal-button" class="team__button button button--primary" type="button">Записаться</button>
               <button class="team__button-second button" type="button">Расписание</button>
             </div>
           </li>
@@ -350,20 +285,8 @@
             <img class="team__image" src="images/panina.png" width="335" height="250" alt="Доктор Сангов.">
             <h3 class="team__subtitle"><span class="title title--size-small">Панина</span>Дарья Александровна</h3>
             <p class="team__text">Администратор</p>
-            <ul class="team__socials socials">
-              <li class="socials__social">
-                <a class="socials__link socials__link--instagram" href="#inst">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li class="socials__social">
-                <a class="socials__link socials__link--prodoctorov" href="#pro">
-                  <span class="visually-hidden">Продокторов</span>
-                </a>
-              </li>
-            </ul>
             <div class="team__wrapper">
-              <button class="team__button button button--primary" type="button">Записаться</button>
+              <button id="modal-button" class="team__button button button--primary" type="button">Записаться</button>
               <button class="team__button-second button" type="button">Расписание</button>
             </div>
           </li>
@@ -371,20 +294,8 @@
             <img class="team__image" src="images/kershinska.png" width="335" height="250" alt="Доктор Сангов.">
             <h3 class="team__subtitle"><span class="title title--size-small">Кершинская</span>Александра Романовна</h3>
             <p class="team__text">Ассистент</p>
-            <ul class="team__socials socials">
-              <li class="socials__social">
-                <a class="socials__link socials__link--instagram" href="#inst">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li class="socials__social">
-                <a class="socials__link socials__link--prodoctorov" href="#pro">
-                  <span class="visually-hidden">Продокторов</span>
-                </a>
-              </li>
-            </ul>
             <div class="team__wrapper">
-              <button class="team__button button button--primary" type="button">Записаться</button>
+              <button id="modal-button" class="team__button button button--primary" type="button">Записаться</button>
               <button class="team__button-second button" type="button">Расписание</button>
             </div>
           </li>
@@ -392,20 +303,8 @@
             <img class="team__image" src="images/tambovzeva.png" width="335" height="250" alt="Доктор Сангов.">
             <h3 class="team__subtitle"><span class="title title--size-small">Тамбовцева</span>Елизавета Павловна</h3>
             <p class="team__text">Ассистент</p>
-            <ul class="team__socials socials">
-              <li class="socials__social">
-                <a class="socials__link socials__link--instagram" href="#inst">
-                  <span class="visually-hidden">Instagram</span>
-                </a>
-              </li>
-              <li class="socials__social">
-                <a class="socials__link socials__link--prodoctorov" href="#pro">
-                  <span class="visually-hidden">Продокторов</span>
-                </a>
-              </li>
-            </ul>
             <div class="team__wrapper">
-              <button class="team__button button button--primary" type="button">Записаться</button>
+              <button id="modal-button" class="team__button button button--primary" type="button">Записаться</button>
               <button class="team__button-second button" type="button">Расписание</button>
             </div>
           </li>
@@ -530,8 +429,9 @@
           <img class="logo__image" src="images/clinic-logo.png" width="59" height="64" alt="Clinic Logo.">
           <p class="logo__description">Стоматологическая<br>клиника Сангова</p>
         </a>
-        <a class="footer__link" href="#wa">Написать в WhatsApp</a>
-        <button class="footer__button button button--primary" type="button">Записаться</button>
+        <button id="modal-button-whatsapp" class="footer__button button button--primary button--whatsapp"
+          type="button">Написать в WhatsApp</button>
+        <button id="modal-button" class="footer__button button button--primary" type="button">Записаться</button>
       </div>
       <address class="footer__address address">
         <ul class="address__list address__list--direction address__list--color">
@@ -555,12 +455,13 @@
 
         <ul class="address__socials socials">
           <li class="socials__social">
-            <a class="socials__link socials__link--color socials__link--whatsapp" href="#wt">
+            <a class="socials__link socials__link--color socials__link--whatsapp" href="https://wa.me/+79639456363">
               <span class="visually-hidden">What's App</span>
             </a>
           </li>
           <li class="socials__social">
-            <a class="socials__link socials__link--color socials__link--instagram" href="#inst">
+            <a class="socials__link socials__link--color socials__link--instagram"
+              href="https://www.instagram.com/sangov_clinic">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
@@ -600,6 +501,39 @@
       <img class="footer__image" src="images/cards.png" width="275" height="169" alt="Способы оплаты.">
     </div>
   </footer>
+
+  <div id="modal" class="request request--modal"> <!-- request--open -->
+    <div class="request__wrapper container">
+      <h2 class="request__title title">Свяжитесь с нами</h2>
+      <form class="request__form" method="post" action="">
+        <label class="request__control">
+          <input class="request__input" type="text" name="name" placeholder="Имя">
+        </label>
+        <label class="request__control">
+          <input class="request__input" type="number" name="tel" placeholder="+7 999 999 99 99">
+        </label>
+        <button id="modal-submit-button" class="request__button button button--primary" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="modal-whatsapp" class="request request--whatsapp"> <!-- request--open -->
+    <div class="request__wrapper container">
+      <h2 class="request__title title">Свяжитесь с нами</h2>
+      <form class="request__form" method="post" action="#">
+        <label class="request__control">
+          <input class="request__input" type="text" name="name" placeholder="Имя">
+        </label>
+        <label class="request__control">
+          <input class="request__input" type="number" name="tel" placeholder="+7 999 999 99 99">
+        </label>
+        <button id="modal-whatsapp-submit-button"
+          class="request__button request__button--whatsapp button button--primary" type="submit">Получить
+          предложение в вотсап</button>
+      </form>
+    </div>
+  </div>
+
 </body>
 
 </html>

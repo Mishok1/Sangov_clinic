@@ -79,6 +79,10 @@
 
   @media (min-width: variables.$desktop-width) {
     grid-column: 1 / 2;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 24px;
   }
 }
 
@@ -86,6 +90,10 @@
   min-width: 335px;
   height: 46px;
   margin: 0 0 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
 }
 
 .doctor__socials {

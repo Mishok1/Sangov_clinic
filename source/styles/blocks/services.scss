@@ -39,7 +39,7 @@
   box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
 
-  &:last-child{
+  &:last-child {
     padding: 0;
   }
 
@@ -61,6 +61,13 @@
   flex-direction: column;
   margin: 8px 0 0;
   row-gap: 8px;
+
+  & span {
+    &:hover {
+      border-bottom: 1px solid #0347ae;
+      margin-bottom: -1px;
+    }
+  }
 }
 
 .services__image {

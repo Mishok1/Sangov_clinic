@@ -1,0 +1,49 @@
+@use '../common/variables.scss';
+
+.page-doctors__promo {
+  margin: 16px 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 24px 0 48px;
+  }
+}
+
+.page-doctors__team {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-doctors__consultation {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-doctors__review {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-doctors__promotion {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-doctors__map {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}

@@ -1,13 +1,6 @@
 /* eslint-disable max-nesting-depth */
 @use "../common/variables.scss";
 
-.orthodontics {
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 48px;
-  }
-}
 
 .orthodontics__list {
   position: relative;

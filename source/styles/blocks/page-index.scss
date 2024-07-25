@@ -1,6 +1,6 @@
 @use '../common/variables.scss';
 
-.page-doctors__promo {
+.page-index__hero {
   margin: 16px 0 40px;
 
   @media (min-width: variables.$desktop-width) {
@@ -8,63 +8,7 @@
   }
 }
 
-.page-prices__price-0 {
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 24px;
-  }
-}
-
-.page-prices__price-1 {
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 24px;
-  }
-}
-
-.page-prices__price-2 {
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 24px;
-  }
-}
-
-.page-prices__price-3 {
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 24px;
-  }
-}
-
-.page-prices__price-4 {
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 24px;
-  }
-}
-
-.page-prices__price-5 {
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 24px;
-  }
-}
-
-.page-prices__price-6 {
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 24px;
-  }
-}
-
-.page-prices__promotion {
+.page-index__rating {
   margin: 0 0 40px;
 
   @media (min-width: variables.$desktop-width) {
@@ -72,7 +16,7 @@
   }
 }
 
-.page-prices__review {
+.page-index__most-popular {
   margin: 0 0 40px;
 
   @media (min-width: variables.$desktop-width) {
@@ -80,7 +24,7 @@
   }
 }
 
-.page-prices__consultation {
+.page-index__before-after {
   margin: 0 0 40px;
 
   @media (min-width: variables.$desktop-width) {
@@ -88,7 +32,7 @@
   }
 }
 
-.page-prices__team {
+.page-index__promo-0 {
   margin: 0 0 40px;
 
   @media (min-width: variables.$desktop-width) {
@@ -96,7 +40,107 @@
   }
 }
 
-.page-prices__map {
+.page-index__services {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__promotion {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__advantages {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__promo-1 {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__follow {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__about {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__doctor {
+  margin: 0 0 40px;
+}
+
+.page-index__certificates {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__team {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__promo-2 {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__works {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__review {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__consultation {
+  margin: 0 0 40px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 48px;
+  }
+}
+
+.page-index__map {
   margin: 0 0 40px;
 
   @media (min-width: variables.$desktop-width) {

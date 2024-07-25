@@ -1,10 +1,5 @@
 @use "../common/variables.scss";
 
-.consultation {
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 48px;
-  }
-}
 
 .consultation__container {
   position: relative;

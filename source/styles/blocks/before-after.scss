@@ -1,17 +1,1 @@
 @use "../common/variables.scss";
-
-.before-after {
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 48px;
-  }
-}
-
-.before-after__container {
-  // padding: 0 20px;
-
-  @media (min-width: variables.$desktop-width) {
-    // padding: 0 123px;
-  }
-}

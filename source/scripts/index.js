@@ -82,3 +82,34 @@ modalWhatsapp.addEventListener('click', (ev) => {
 // submitButtonWhatsapp.addEventListener('submit', () => {
 //   modal.classList.toggle('request--open');
 // });
+
+
+//license
+
+
+const licenseModal = document.querySelector('#big-image');
+const licenseImage = document.querySelectorAll('#license-image');
+const bigImagePicture = document.querySelector('#big-image_picture');
+
+
+licenseImage.forEach((image) => {
+  image.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    const imageSrc = evt.target.src;
+    bigImagePicture.src = imageSrc;
+
+    licenseModal.classList.toggle('big-image--open');
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        licenseModal.classList.toggle('big-image--open');
+      }
+    }, { once: true });
+
+  });
+});
+
+licenseModal.addEventListener('click', () => {
+  licenseModal.classList.toggle('big-image--open');
+}
+);

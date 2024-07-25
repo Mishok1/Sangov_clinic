@@ -1,10 +1,7 @@
 @use "../common/variables.scss";
 
 .hero {
-  margin: 16px 0 40px;
-
   @media (min-width: variables.$desktop-width) {
-    margin: 24px 0 48px;
     position: relative;
   }
 }

@@ -1,8 +1,17 @@
 @use "../common/variables.scss";
 
+.questions {
+  @media (min-width: variables.$desktop-width) {
+    height: 480px;
+  }
+}
 
 .questions__title {
   margin: 0 0 12px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0 0 24px;
+  }
 }
 
 .questions__list {
@@ -30,7 +39,8 @@
     @media (min-width: variables.$desktop-width) {
       width: 60%;
       left: auto;
-      height: calc(100% + 128px);
+      // height: calc(100% + 128px);
+      height: 480px;
       top: 50%;
       transform: translateY(-50%);
       right: 0;

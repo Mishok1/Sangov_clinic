@@ -3,11 +3,6 @@
 .services {
   background-color: #0347ae;
   padding: 32px 0;
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 48px;
-  }
 }
 
 .services__title {

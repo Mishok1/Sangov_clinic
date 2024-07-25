@@ -1,12 +1,5 @@
 @use "../common/variables.scss";
 
-.advantages {
-  margin: 0 0 40px;
-
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 48px;
-  }
-}
 
 .advantages__title {
   margin: 0 0 24px;

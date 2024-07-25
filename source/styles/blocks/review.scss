@@ -1,21 +1,44 @@
 @use "../common/variables.scss";
 
-.review {
-  margin: 0 0 40px;
 
-  @media (min-width: variables.$desktop-width) {
-    margin: 0 0 48px;
-  }
+.review__title {
+  text-align: center;
+  margin: 0 0 32px;
 }
 
 .review__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  border-left: 1px solid #333333;
+  display: flex;
+}
+
+.review__item {
+  padding: 24px 16px;
+  width: 360px;
+  height: 280px;
+
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-right: 1px solid #333333;
+
+
 }
 
 .review__date {
-  margin: 0;
+  margin: 0 0 8px;
+}
+
+.review__wrapper {
+  display: flex;
+  column-gap: 24px;
+  margin: 0 0 16px;
+}
+
+.review__stars {
+  display: flex;
+  column-gap: 6px;
 }
 
 .review__name {
@@ -24,4 +47,18 @@
   font-weight: 500;
   line-height: 24px;
   margin: 0;
+}
+
+.review__text {
+  margin: 0 0 16px;
+}
+
+.review__button {
+  font-family: "Manrope-500", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  background-color: #ffffff;
+  color: #0347AE;
 }

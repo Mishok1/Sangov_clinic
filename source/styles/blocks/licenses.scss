@@ -1,0 +1,72 @@
+@use '../common/variables.scss';
+
+.licenses {}
+
+.licenses__title {
+  margin: 0 0 24px;
+}
+
+.licenses__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  column-gap: 30px;
+}
+
+.licenses__image {
+  box-shadow: 0 2px 9px 0px #00000026;
+  border: 1px solid #0347AE;
+  border-radius: 16px;
+}
+
+@media (min-width: variables.$desktop-width) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.big-image {
+  display: none;
+
+  &--open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+  }
+}
+
+.big-image__wrapper {
+  box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  position: relative;
+  margin: auto;
+
+  @media (min-width: variables.$desktop-width) {
+  }
+}
+
+.big-image__image {
+  height: auto;
+  width: 320px;
+  box-shadow: 0 2px 9px 0px #00000026;
+  border-radius: 16px;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 500px;
+  }
+}

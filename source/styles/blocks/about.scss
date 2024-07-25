@@ -10,6 +10,7 @@
 
   &--background-color {
     background-color: inherit;
+    padding: 0;
   }
 }
 
@@ -38,11 +39,20 @@
     order: 1;
     margin: 0;
     width: 582px;
+
+    &--order {
+      order: 0;
+      margin-right: 30px;
+    }
   }
 }
 
 .about__wrapper {
   margin-right: 30px;
+
+  &--order {
+    margin: 0;
+  }
 }
 
 .about__title {

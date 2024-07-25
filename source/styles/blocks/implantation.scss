@@ -33,10 +33,7 @@
   margin: 0 0 24px;
   object-fit: cover;
   border-radius: 16px;
-
-  @media (min-width: variables.$desktop-width) {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .implantation__subtitle {

@@ -53,6 +53,7 @@
   border-radius: 16px;
   background-color: #ffffff;
   position: relative;
+  cursor: pointer;
 
   @media (min-width: variables.$desktop-width) {
     padding: 24px 32px;

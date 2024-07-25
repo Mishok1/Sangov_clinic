@@ -3,6 +3,10 @@
 .comment {
   background: url("../../images/comment-background.png") no-repeat center;
   background-size: 100%;
+
+  @media (min-width: variables.$desktop-width) {
+    background-image: url('../../images/comment-background-desktop.png');
+  }
 }
 
 .comment__container {

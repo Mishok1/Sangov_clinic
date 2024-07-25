@@ -1,4 +1,4 @@
-//mobile-button
+//MOBILE BUTTON
 
 const mobileButton = document.querySelector('.header__mobile-button');
 const mobileMenu = document.querySelector('.mobile');
@@ -12,7 +12,8 @@ mobileButton.addEventListener('click', (evt) => {
 });
 
 
-// modal
+// MODAL
+
 
 const modalButtons = document.querySelectorAll('#modal-button');
 const modal = document.querySelector('#modal');
@@ -48,7 +49,8 @@ modal.addEventListener('click', (e) => {
 // });
 
 
-// modal-watsapp
+// MODAL WHATSAPP
+
 
 const modalButtonsWhatsapp = document.querySelectorAll('#modal-button-whatsapp');
 const modalWhatsapp = document.querySelector('#modal-whatsapp');
@@ -84,7 +86,7 @@ modalWhatsapp.addEventListener('click', (ev) => {
 // });
 
 
-//license
+// LISENCE
 
 
 const licenseModal = document.querySelector('#big-image');
@@ -116,7 +118,7 @@ if (bigImagePicture) {
 }
 
 
-//questions
+//QUESTIONS
 
 
 const questionsItem = document.querySelectorAll('#questions-item');
@@ -131,4 +133,3 @@ if (questionsItem) {
     });
   });
 }
-

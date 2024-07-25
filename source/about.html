@@ -45,7 +45,7 @@
             </a>
           </li>
           <li class="socials__social">
-            <button class="socials__link socials__link--mail button" type="button">
+            <button id="modal-button" class="socials__link socials__link--mail button" type="button">
               <span class="visually-hidden">Email</span>
             </button>
           </li>
@@ -61,22 +61,22 @@
         <div class="header__menu-wrapper menu-wrapper">
           <ul class="menu-wrapper__list menu">
             <li class="menu__item">
-              <a class="menu__link" href="/services.html">Услуги</a>
+              <a class="menu__link" href="services.html">Услуги</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="/prices.html">Цены</a>
+              <a class="menu__link" href="prices.html">Цены</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="/our-works.html">Наши работы</a>
+              <a class="menu__link" href="our-works.html">Наши работы</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="/our-doctors.html">Врачи</a>
+              <a class="menu__link" href="our-doctors.html">Врачи</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="/about.html">О нас</a>
+              <a class="menu__link" href="about.html">О нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="/contacts.html">Контакты</a>
+              <a class="menu__link" href="contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
@@ -101,22 +101,22 @@
       <div class="header__mobile mobile">
         <ul class="mobile__menu menu">
           <li class="menu__item">
-            <a class="menu__link" href="/services.html">Услуги</a>
+            <a class="menu__link" href="services.html">Услуги</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="/prices.html">Цены</a>
+            <a class="menu__link" href="prices.html">Цены</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="/our-works.html">Наши работы</a>
+            <a class="menu__link" href="our-works.html">Наши работы</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="/our-doctors.html">Врачи</a>
+            <a class="menu__link" href="our-doctors.html">Врачи</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="/about.html">О нас</a>
+            <a class="menu__link" href="about.html">О нас</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="/contacts.html">Контакты</a>
+            <a class="menu__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
         <address class="mobile__address address">
@@ -147,7 +147,7 @@
               </a>
             </li>
             <li class="socials__social">
-              <button class="socials__link socials__link--mail button" type="button">
+              <button id="modal-button" class="socials__link socials__link--mail button" type="button">
                 <span class="visually-hidden">Email</span>
               </button>
             </li>
@@ -193,9 +193,9 @@
         <picture class="about__picture">
           <source media="(min-width: 1440px)" type="image/png" srcset="images/small-doctor-showing-desktop.png"
             width="582" height="328">
-          <img class="about__image" src="images/small-doctor-showing.png" width="335" height="250" alt="Доктора.">
+          <img class="about__image about__image--order" src="images/small-doctor-showing.png" width="335" height="250" alt="Доктора.">
         </picture>
-        <div class="about__wrapper">
+        <div class="about__wrapper about__wrapper--order">
           <h2 class="about__title title">О нашей клинике</h2>
           <p class="about__description">Наша клиника открылась в 2022 году.
             Мы предлагаем полный спектр стоматологических услуг: лечение зубов, имплантация, протезирование,
@@ -332,19 +332,11 @@
         <ul class="review__list">
           <li class="review__item">
             <p class="review__date">20.05.2024</p>
-            <div class="review__wrapper">
-              <h3 class="review__name">​Федор Ермолаев</h3>
-              <div class="review__stars">
-                <img src="icons/star.svg" width="20" height="20" alt="Звезда.">
-                <img src="icons/star.svg" width="20" height="20" alt="Звезда.">
-                <img src="icons/star.svg" width="20" height="20" alt="Звезда.">
-                <img src="icons/star.svg" width="20" height="20" alt="Звезда.">
-                <img src="icons/star.svg" width="20" height="20" alt="Звезда.">
-              </div>
-            </div>
-            <p class="review__text">Была нестерпимая острая боль (абсцесс 8ки). Обзвонил клиник 25, и эта единственная где меня смогли
+            <h3 class="review__name">​Федор Ермолаев</h3>
+            <div class="review__stars"></div>
+            <p>Была нестерпимая острая боль (абсцесс 8ки). Обзвонил клиник 25, и эта единственная где меня смогли
               принять через 40 минут. Снимок, обезболивание, быстрое и качественное удаление....</p>
-            <button class="review__button button" type="button">Читать целиком</button>
+            <button class="review__button button">Читать целиком</button>
           </li>
         </ul>
       </div>
@@ -416,7 +408,7 @@
               </a>
             </li>
             <li class="socials__social">
-              <button class="socials__link socials__link--mail button" type="button">
+              <button id="modal-button" class="socials__link socials__link--mail button" type="button">
                 <span class="visually-hidden">Email</span>
               </button>
             </li>
@@ -445,7 +437,7 @@
         </a>
         <button id="modal-button-whatsapp" class="footer__button button button--primary button--whatsapp"
           type="button">Написать в WhatsApp</button>
-        <button id="modal-button" class="footer__button button button--primary" type="button">Записаться</button>
+          <button id="modal-button" class="footer__button button button--primary" type="button">Записаться</button>
       </div>
       <address class="footer__address address">
         <ul class="address__list address__list--direction address__list--color">
@@ -480,7 +472,7 @@
             </a>
           </li>
           <li class="socials__social">
-            <button class="socials__link socials__link--color socials__link--mail button" type="button">
+            <button id="modal-button" class="socials__link socials__link--color socials__link--mail button" type="button">
               <span class="visually-hidden">Email</span>
             </button>
           </li>
@@ -490,22 +482,22 @@
         <div class="footer__menu-wrapper menu-wrapper">
           <ul class="menu-wrapper__list menu-wrapper__list--column menu">
             <li class="menu__item">
-              <a href="#">Услуги</a>
+              <a href="services.html">Услуги</a>
             </li>
             <li class="menu__item">
-              <a href="#">Цены</a>
+              <a href="prices.html">Цены</a>
             </li>
             <li class="menu__item">
-              <a href="#">Наши работы</a>
+              <a href="our-works.html">Наши работы</a>
             </li>
             <li class="menu__item">
-              <a href="#">Врачи</a>
+              <a href="our-doctors.html">Врачи</a>
             </li>
             <li class="menu__item">
-              <a href="#">О нас</a>
+              <a href="about.html">О нас</a>
             </li>
             <li class="menu__item">
-              <a href="#">Контакты</a>
+              <a href="contacts.html">Контакты</a>
             </li>
           </ul>
         </div>
@@ -516,7 +508,7 @@
     </div>
   </footer>
 
-  <div id="modal" class="request request--modal"> <!-- request--open -->
+  <div id="modal" class="request request--modal">
     <div class="request__wrapper container">
       <h2 class="request__title title">Свяжитесь с нами</h2>
       <form class="request__form" method="post" action="">
@@ -531,7 +523,7 @@
     </div>
   </div>
 
-  <div id="modal-whatsapp" class="request request--whatsapp"> <!-- request--open -->
+  <div id="modal-whatsapp" class="request request--whatsapp">
     <div class="request__wrapper container">
       <h2 class="request__title title">Свяжитесь с нами</h2>
       <form class="request__form" method="post" action="#">
@@ -557,3 +549,5 @@
 </body>
 
 </html>
+
+

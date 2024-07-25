@@ -91,25 +91,44 @@ const licenseModal = document.querySelector('#big-image');
 const licenseImage = document.querySelectorAll('#license-image');
 const bigImagePicture = document.querySelector('#big-image_picture');
 
+if (bigImagePicture) {
+  licenseImage.forEach((image) => {
+    image.addEventListener('click', (evt) => {
+      evt.preventDefault();
+      const imageSrc = evt.target.src;
+      bigImagePicture.src = imageSrc;
 
-licenseImage.forEach((image) => {
-  image.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    const imageSrc = evt.target.src;
-    bigImagePicture.src = imageSrc;
+      licenseModal.classList.toggle('big-image--open');
 
-    licenseModal.classList.toggle('big-image--open');
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          licenseModal.classList.toggle('big-image--open');
+        }
+      }, { once: true });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') {
-        licenseModal.classList.toggle('big-image--open');
-      }
-    }, { once: true });
-
+    });
   });
-});
 
-licenseModal.addEventListener('click', () => {
-  licenseModal.classList.toggle('big-image--open');
+  licenseModal.addEventListener('click', () => {
+    licenseModal.classList.toggle('big-image--open');
+  }
+  );
 }
-);
+
+
+//questions
+
+
+const questionsItem = document.querySelectorAll('#questions-item');
+
+if (questionsItem) {
+  questionsItem.forEach((item) => {
+    item.addEventListener('click', () => {
+      const currentAnswer = item.querySelector('#questions-answer');
+
+      item.classList.toggle('questions__item--open');
+      currentAnswer.classList.toggle('questions__answer--open');
+    });
+  });
+}
+

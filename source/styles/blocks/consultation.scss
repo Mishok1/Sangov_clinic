@@ -58,9 +58,6 @@
   width: 100%;
 
   @media (min-width: variables.$desktop-width) {
-    // top: 0;
-    // left: -170px;
-
     display: block;
     position: absolute;
     top: 50%;
@@ -86,7 +83,17 @@
   font-weight: 500;
   line-height: 24px;
 
+  @media (min-width: variables.$desktop-width) {
+    width: 345px;
+  }
+
   &::placeholder {
     color: #1a1919;
+  }
+}
+
+.consultation__button {
+  @media (min-width: variables.$desktop-width) {
+    width: 345px;
   }
 }

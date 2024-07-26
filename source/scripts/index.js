@@ -1,3 +1,52 @@
+//swiper
+
+import Swiper from '../vendor/swiper-11.1.7/package/swiper-bundle.mjs';
+
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  loop: true,
+  speed: 5000,
+  freeMode: {
+    enabled: true,
+    sticky: true,
+  },
+  autoplay: {
+    delay: 3000,
+  },
+
+  breakpoints: {
+    1440: {
+      slidesPerView: 5,
+    },
+
+  },
+});
+
+const swiper3 = new Swiper('.swiper3.swiper', {
+  slidesPerView: 1,
+  loop: true,
+  speed: 5000,
+  freeMode: {
+    enabled: true,
+    sticky: true,
+  },
+  autoplay: {
+    delay: 3000,
+  },
+
+  breakpoints: {
+    1440: {
+      slidesPerView: 4,
+    },
+
+  },
+});
+
+
+//swiper end
+
+
 //MOBILE BUTTON
 
 const mobileButton = document.querySelector('.header__mobile-button');

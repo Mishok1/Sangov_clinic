@@ -1,0 +1,25 @@
+.before-after__image {
+  margin-bottom: 24px;
+  border-radius: 16px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.before-after__title {
+  margin: 0 0 24px;
+}
+
+.before-after__subtitle {
+  margin: 0 0 8px;
+  color: #1A1919;
+}
+
+.before-after__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+// @import '../../../source/vendor/swiper-11.1.7/package/swiper-bundle.css'
+@import '../../vendor/swiper-11.1.7/package/swiper-bundle.css'
+
